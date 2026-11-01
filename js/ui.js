@@ -130,6 +130,41 @@ function initStoryCarousel() {
   });
 }
 
+/* ── ÉCRAN DE CHARGEMENT ───────────────────────────────────────────────────── */
+
+let loaderStartedAt = 0;
+
+/**
+ * Verrouille le défilement pendant le chargement et prévoit un filet de sécurité.
+ */
+function initPageLoader() {
+  if (!document.getElementById('pageLoader')) return;
+
+  loaderStartedAt = Date.now();
+  document.body.classList.add('is-loading');
+
+  // Ne jamais bloquer la page plus de 5 s, même si les données n'arrivent pas
+  window.setTimeout(hidePageLoader, 5000);
+}
+
+/**
+ * Masque l'écran de chargement après un temps minimum de 600 ms.
+ * Appelée par dataLoader.js une fois les données en place.
+ */
+function hidePageLoader() {
+  const loader = document.getElementById('pageLoader');
+  document.body.classList.remove('is-loading');
+
+  if (!loader || loader.classList.contains('is-hidden')) return;
+
+  const wait = Math.max(0, 600 - (Date.now() - loaderStartedAt));
+
+  window.setTimeout(() => {
+    loader.classList.add('is-hidden');
+    window.setTimeout(() => loader.remove(), 600);
+  }, wait);
+}
+
 /* ── RÉVÉLATION AU DÉFILEMENT ──────────────────────────────────────────────── */
 
 /**
@@ -139,7 +174,7 @@ function initStoryCarousel() {
 function initReveal() {
   const targets = document.querySelectorAll(
     '.story .center-copy, .story-carousel, .menu-section .center-copy, .menu-tabs,' +
-    ' .menu-panels, .dark-panel, .events-section .center-copy, .event-card, .contact-card'
+    ' .menu-panels, .dark-panel, .events-section .center-copy, .reviews-grid, .contact-card'
   );
 
   if (!('IntersectionObserver' in window) || targets.length === 0) return;
@@ -196,6 +231,7 @@ function initKeyboardListeners() {
  * Point d'entrée — appelé depuis dataLoader.js après le chargement des données.
  */
 function initUI() {
+  initPageLoader();
   initHeader();
   initHeroSlideshow();
   initStoryCarousel();

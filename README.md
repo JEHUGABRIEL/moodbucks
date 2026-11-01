@@ -32,6 +32,8 @@ js/
   menu.json      Carte réelle (17 catégories, 161 plats) relevée sur
                  menu.omegasoftware.ca/moodbucks
   data.json      Événements de la maison
+  reviews.json   Avis clients publiés (vide tant qu'aucun avis réel n'est fourni)
+  reviews.js     Rend les avis de reviews.json, ou garde l'invitation statique
   dataLoader.js  Charge menu.json + data.json, lance renderMenu() et l'UI
   menuRender.js  Construit les onglets et les lignes de la carte, remplit PLATS
   tabs.js        Onglets du menu (switchTab)

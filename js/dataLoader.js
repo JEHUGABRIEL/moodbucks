@@ -50,6 +50,7 @@ async function loadData() {
     // Initialiser l'interface quelle que soit l'issue du fetch
     initUI();
     initTabs();
+    if (typeof hidePageLoader === 'function') hidePageLoader();
   }
 }
 
