@@ -18,9 +18,9 @@
   <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
     <div class="page-loader__inner">
       <span class="page-loader__mark" aria-hidden="true">M</span>
-      <span class="page-loader__name">Moodbucks · Bangui</span>
+      <span class="page-loader__name" data-i18n="loader.name">Moodbucks · Bangui</span>
       <span class="page-loader__bar" aria-hidden="true"></span>
-      <span class="sr-only">Chargement de la carte et des événements</span>
+      <span class="sr-only" data-i18n="loader.sr">Chargement de la carte et des événements</span>
     </div>
   </div>
   <noscript><style>.page-loader { display: none; }</style></noscript>
@@ -36,17 +36,25 @@
       </a>
 
       <nav class="main-nav" aria-label="Navigation principale">
-        <a href="#maison">La maison</a>
-        <a href="#menu">Menu</a>
-        <a href="#evenements">Événements</a>
-        <a href="#noustrouver">Nous trouver</a>
+        <a href="#maison" data-i18n="nav.house">La maison</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#evenements" data-i18n="nav.events">Événements</a>
+        <a href="#noustrouver" data-i18n="nav.find">Nous trouver</a>
       </nav>
 
       <div class="header-utils">
+        <div class="locale-switch" role="group" aria-label="Langue">
+          <button class="locale-btn" type="button" data-locale="fr" aria-pressed="true">FR</button>
+          <button class="locale-btn" type="button" data-locale="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="cart-btn" href="#" id="cartBtn" aria-label="Panier">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 6h2l2.2 9.4a2 2 0 0 0 1.95 1.55h6.9a2 2 0 0 0 1.94-1.5L21 8H7" /><circle cx="10.5" cy="20" r="1.2" /><circle cx="17" cy="20" r="1.2" /></svg>
+          <span class="cart-badge" id="cartBadge" hidden>0</span>
+        </a>
         <a class="icon-btn" href="https://wa.me/23672999955" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
         </a>
-        <a class="nav-reserve" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">Réserver</a>
+        <a class="nav-reserve" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer" data-i18n="nav.reserve">Réserver</a>
         <button class="nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
             <path d="M4 7h16M4 12h16M4 17h16" />
@@ -59,12 +67,16 @@
   <!-- Menu mobile -->
   <div class="mobile-menu" id="mobileMenu" hidden>
     <nav aria-label="Navigation mobile">
-      <a href="#maison">La maison</a>
-      <a href="#menu">Menu</a>
-      <a href="#evenements">Événements</a>
-      <a href="#noustrouver">Nous trouver</a>
-      <a class="mobile-menu__reserve" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">Réserver une table</a>
+      <a href="#maison" data-i18n="nav.house">La maison</a>
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#evenements" data-i18n="nav.events">Événements</a>
+      <a href="#noustrouver" data-i18n="nav.find">Nous trouver</a>
+      <a class="mobile-menu__reserve" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer" data-i18n="nav.bookTable">Réserver une table</a>
     </nav>
+    <div class="locale-switch locale-switch--mobile" role="group" aria-label="Langue">
+      <button class="locale-btn" type="button" data-locale="fr" aria-pressed="true">FR</button>
+      <button class="locale-btn" type="button" data-locale="en" aria-pressed="false">EN</button>
+    </div>
   </div>
 
   <main>
@@ -87,13 +99,13 @@
       <div class="hero-shade" aria-hidden="true"></div>
 
       <div class="hero-inner container">
-        <span class="caps caps-light hero-eyebrow">Restaurant &amp; bar · Bangui</span>
+        <span class="caps caps-light hero-eyebrow" data-i18n="hero.eyebrow">Restaurant &amp; bar · Bangui</span>
         <h1 class="hero-title">
-          <span>Moodbucks,</span>
-          <span>l’âme de Bangui</span>
+          <span data-i18n="hero.title1">Moodbucks,</span>
+          <span data-i18n="hero.title2">l’âme de Bangui</span>
         </h1>
         <span class="ornament hero-ornament" aria-hidden="true"></span>
-        <p class="hero-lead">Cuisine locale &amp; internationale, grillades au feu de bois, cocktails maison et musique live tous les soirs.</p>
+        <p class="hero-lead" data-i18n="hero.lead">Cuisine locale &amp; internationale, grillades au feu de bois, cocktails maison et musique live tous les soirs.</p>
       </div>
 
       <div class="hero-dots" id="heroDots" aria-label="Changer de photo"></div>
@@ -111,16 +123,16 @@
     <section class="section story" id="maison">
       <div class="container story-grid">
         <div class="center-copy">
-          <span class="script">Notre</span>
-          <span class="caps">Maison</span>
+          <span class="script" data-i18n="common.our">Notre</span>
+          <span class="caps" data-i18n="story.caps">Maison</span>
           <span class="ornament" aria-hidden="true"></span>
-          <p>
+          <p data-i18n="story.text">
             À deux pas du centre de Bangui, Moodbucks réunit une salle, une terrasse et un bar.
             On y vient pour un déjeuner d’affaires, un dîner en famille ou un cocktail
             au son des musiciens de la maison.
           </p>
           <a class="gold-link" href="#evenements">
-            Les soirées de la maison
+            <span data-i18n="story.link">Les soirées de la maison</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
               <path d="M7 17 17 7M9 7h8v8" />
             </svg>
@@ -160,13 +172,9 @@
             <path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M16 3c-1.4 1.6-2 3.4-2 5.5 0 2 .6 3 2 3v10M16 3v8.5" />
           </svg>
         </span>
-        <h2 class="script script-light">
-          Déjeuners<br />&amp; dîners
-        </h2>
+        <h2 class="script script-light" data-i18n-html="trip.title">Déjeuners<br />&amp; dîners</h2>
         <span class="ornament ornament-dark" aria-hidden="true"></span>
-        <p class="triptych-time">
-          Tous les jours<br />8h00 – minuit
-        </p>
+        <p class="triptych-time" data-i18n-html="trip.time">Tous les jours<br />8h00 – minuit</p>
       </div>
       <figure class="triptych-photo">
         <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&q=80" alt="Brochettes grillées à la braise" />
@@ -182,10 +190,10 @@
     <section class="section menu-section" id="menu">
       <div class="container">
         <div class="center-copy">
-          <span class="script">Notre</span>
-          <span class="caps">Menu</span>
+          <span class="script" data-i18n="common.our">Notre</span>
+          <span class="caps" data-i18n="menu.caps">Menu</span>
           <span class="ornament" aria-hidden="true"></span>
-          <p>
+          <p data-i18n="menu.text">
             Pizzas pétries sur place, plats chinois mijotés, grillades au feu,
             burgers maison, sandwichs libanais et petits déjeuners : la carte
             complète de la maison, servie du matin à minuit.
@@ -200,11 +208,11 @@
 
         <div class="dark-panel">
           <div>
-            <span class="script">À emporter</span>
-            <span class="caps">Commande WhatsApp</span>
-            <p>Toute la carte est disponible à emporter. Écrivez-nous, nous préparons votre commande pour l’heure souhaitée.</p>
+            <span class="script" data-i18n="takeaway.script">À emporter</span>
+            <span class="caps" data-i18n="takeaway.caps">Commande WhatsApp</span>
+            <p data-i18n="takeaway.text">Toute la carte est disponible à emporter. Écrivez-nous, nous préparons votre commande pour l’heure souhaitée.</p>
           </div>
-          <a class="btn btn-gold" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20passer%20une%20commande" target="_blank" rel="noopener noreferrer">Commander</a>
+          <a class="btn btn-gold" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20passer%20une%20commande" target="_blank" rel="noopener noreferrer" data-i18n="takeaway.btn">Commander</a>
         </div>
       </div>
     </section>
@@ -217,9 +225,7 @@
         <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=2000&q=80" alt="" />
       </div>
       <div class="quality-shade" aria-hidden="true"></div>
-      <h2 class="quality-title">
-        Nous veillons<br />à la qualité de nos plats !
-      </h2>
+      <h2 class="quality-title" data-i18n-html="quality.title">Nous veillons<br />à la qualité de nos plats !</h2>
       <span class="seal" aria-hidden="true">M</span>
     </section>
 
@@ -229,17 +235,17 @@
     <section class="section events-section" id="evenements">
       <div class="container">
         <div class="center-copy">
-          <span class="script">Les</span>
-          <span class="caps">Événements</span>
+          <span class="script" data-i18n="events.script">Les</span>
+          <span class="caps" data-i18n="events.caps">Événements</span>
           <span class="ornament" aria-hidden="true"></span>
-          <p>
+          <p data-i18n="events.text">
             Chaque soir a sa couleur : musique live, scène ouverte, DJ, brunch du dimanche
             et grands matchs sur écran géant.
           </p>
         </div>
 
         <div class="events-grid">
-          <article class="event-card" role="button" tabindex="0" onclick="openEvent('live-jeudi')" onkeydown="if(event.key==='Enter')openEvent('live-jeudi')">
+          <article class="event-card" role="button" tabindex="0" data-event="live-jeudi" onclick="openEvent('live-jeudi')" onkeydown="if(event.key==='Enter')openEvent('live-jeudi')">
             <figure class="event-card-media">
               <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=80" alt="Musiciens sur scène" />
             </figure>
@@ -247,7 +253,7 @@
               <span class="event-date">Chaque jeudi <i>•</i> 21h</span>
               <h3>Soirée Live Music</h3>
               <p>Nos musiciens jouent en direct. Ambiance festive garantie pour votre soirée.</p>
-              <span class="gold-link">Découvrir
+              <span class="gold-link"><span data-i18n="events.discover">Découvrir</span>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
@@ -255,7 +261,7 @@
             </div>
           </article>
 
-          <article class="event-card" role="button" tabindex="0" onclick="openEvent('open-mic-vendredi')" onkeydown="if(event.key==='Enter')openEvent('open-mic-vendredi')">
+          <article class="event-card" role="button" tabindex="0" data-event="open-mic-vendredi" onclick="openEvent('open-mic-vendredi')" onkeydown="if(event.key==='Enter')openEvent('open-mic-vendredi')">
             <figure class="event-card-media">
               <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=700&q=80" alt="Micro sur scène" />
             </figure>
@@ -263,7 +269,7 @@
               <span class="event-date">Chaque vendredi <i>•</i> 20h</span>
               <h3>Open Mic Night</h3>
               <p>À vous de briller : chanteurs, poètes et humoristes sur la scène de la maison.</p>
-              <span class="gold-link">Découvrir
+              <span class="gold-link"><span data-i18n="events.discover">Découvrir</span>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
@@ -271,7 +277,7 @@
             </div>
           </article>
 
-          <article class="event-card" role="button" tabindex="0" onclick="openEvent('dj-samedi')" onkeydown="if(event.key==='Enter')openEvent('dj-samedi')">
+          <article class="event-card" role="button" tabindex="0" data-event="dj-samedi" onclick="openEvent('dj-samedi')" onkeydown="if(event.key==='Enter')openEvent('dj-samedi')">
             <figure class="event-card-media">
               <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=700&q=80" alt="Soirée DJ" />
             </figure>
@@ -279,7 +285,7 @@
               <span class="event-date">Chaque samedi <i>•</i> 22h</span>
               <h3>DJ Night – Boom Boom Saturdays</h3>
               <p>Nos DJ résident enchaînent les hits remixés jusqu’à l’aube.</p>
-              <span class="gold-link">Découvrir
+              <span class="gold-link"><span data-i18n="events.discover">Découvrir</span>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
@@ -287,7 +293,7 @@
             </div>
           </article>
 
-          <article class="event-card" role="button" tabindex="0" onclick="openEvent('brunch-dimanche')" onkeydown="if(event.key==='Enter')openEvent('brunch-dimanche')">
+          <article class="event-card" role="button" tabindex="0" data-event="brunch-dimanche" onclick="openEvent('brunch-dimanche')" onkeydown="if(event.key==='Enter')openEvent('brunch-dimanche')">
             <figure class="event-card-media">
               <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=700&q=80" alt="Table de brunch" />
             </figure>
@@ -295,7 +301,7 @@
               <span class="event-date">Chaque dimanche <i>•</i> 10h</span>
               <h3>Brunch Festif</h3>
               <p>Buffet local, jus frais et musique d’ambiance pour commencer le dimanche.</p>
-              <span class="gold-link">Découvrir
+              <span class="gold-link"><span data-i18n="events.discover">Découvrir</span>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
@@ -303,7 +309,7 @@
             </div>
           </article>
 
-          <article class="event-card" role="button" tabindex="0" onclick="openEvent('ladies-night')" onkeydown="if(event.key==='Enter')openEvent('ladies-night')">
+          <article class="event-card" role="button" tabindex="0" data-event="ladies-night" onclick="openEvent('ladies-night')" onkeydown="if(event.key==='Enter')openEvent('ladies-night')">
             <figure class="event-card-media">
               <img src="https://images.unsplash.com/photo-1549887534-f64a3b6f6e3e?w=700&q=80" alt="Cocktails et soirée" />
             </figure>
@@ -311,7 +317,7 @@
               <span class="event-date">1er mercredi du mois <i>•</i> 19h</span>
               <h3>Ladies Night</h3>
               <p>Cocktails à moitié prix pour les dames jusqu’à 22h, DJ et animations.</p>
-              <span class="gold-link">Découvrir
+              <span class="gold-link"><span data-i18n="events.discover">Découvrir</span>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
@@ -319,7 +325,7 @@
             </div>
           </article>
 
-          <article class="event-card" role="button" tabindex="0" onclick="openEvent('match-foot')" onkeydown="if(event.key==='Enter')openEvent('match-foot')">
+          <article class="event-card" role="button" tabindex="0" data-event="match-foot" onclick="openEvent('match-foot')" onkeydown="if(event.key==='Enter')openEvent('match-foot')">
             <figure class="event-card-media">
               <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=700&q=80" alt="Match de football" />
             </figure>
@@ -327,7 +333,7 @@
               <span class="event-date">Jours de match <i>•</i> En direct</span>
               <h3>Match Foot Live</h3>
               <p>Tous les grands matchs sur écran géant, ambiance de stade garantie.</p>
-              <span class="gold-link">Découvrir
+              <span class="gold-link"><span data-i18n="events.discover">Découvrir</span>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
                   <path d="M7 17 17 7M9 7h8v8" />
                 </svg>
@@ -344,23 +350,23 @@
     <section class="section reviews" id="avis">
       <div class="container reviews-grid">
         <div class="center-copy reviews-copy">
-          <span class="script">Avis</span>
-          <span class="caps">De nos hôtes</span>
+          <span class="script" data-i18n="reviews.script">Avis</span>
+          <span class="caps" data-i18n="reviews.caps">De nos hôtes</span>
           <span class="ornament" aria-hidden="true"></span>
-          <p>Chaque table compte. Vos retours nous aident à ajuster la carte, le service et les soirées.</p>
+          <p data-i18n="reviews.text">Chaque table compte. Vos retours nous aident à ajuster la carte, le service et les soirées.</p>
           <a class="gold-link" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">
-            Laisser un avis sur Google
+            <span data-i18n="reviews.link">Laisser un avis sur Google</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
           </a>
         </div>
 
         <div class="reviews-list" id="reviewsList" aria-live="polite">
           <div class="reviews-empty">
-            <span class="script">Votre avis</span>
-            <p>Les commentaires de nos hôtes seront publiés ici au fur et à mesure. Vous avez dîné ou passé une soirée chez nous ? Racontez-nous.</p>
+            <span class="script" data-i18n="reviews.emptyTitle">Votre avis</span>
+            <p data-i18n="reviews.emptyText">Les commentaires de nos hôtes seront publiés ici au fur et à mesure. Vous avez dîné ou passé une soirée chez nous ? Racontez-nous.</p>
             <div class="reviews-empty-actions">
-              <a class="btn btn-outline-dark" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">Avis Google</a>
-              <a class="btn btn-gold" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20souhaite%20laisser%20un%20avis" target="_blank" rel="noopener noreferrer">Nous écrire</a>
+              <a class="btn btn-outline-dark" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer" data-i18n="reviews.google">Avis Google</a>
+              <a class="btn btn-gold" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20souhaite%20laisser%20un%20avis" target="_blank" rel="noopener noreferrer" data-i18n="reviews.write">Nous écrire</a>
             </div>
           </div>
         </div>
@@ -377,8 +383,8 @@
 
       <div class="container map-overlay">
         <div class="contact-card">
-          <span class="script script-light">Contact</span>
-          <span class="caps caps-light">Notre restaurant</span>
+          <span class="script script-light" data-i18n="contact.script">Contact</span>
+          <span class="caps caps-light" data-i18n="contact.caps">Notre restaurant</span>
           <span class="ornament ornament-dark" aria-hidden="true"></span>
 
           <a class="contact-line" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">
@@ -386,7 +392,7 @@
               <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z" />
               <circle cx="12" cy="10" r="2.5" />
             </svg>
-            <span>PK0, à côté de l'ambassade des États-Unis<br />Bangui, République Centrafricaine</span>
+            <span data-i18n-html="common.address">PK0, à côté de l’ambassade des États-Unis<br />Bangui, République Centrafricaine</span>
           </a>
           <a class="contact-line" href="tel:+23672999955">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -406,7 +412,7 @@
               <circle cx="12" cy="12" r="9" />
               <path d="M12 7v5l3.5 2" />
             </svg>
-            <span>Ouvert tous les jours<br />8h00 – minuit</span>
+            <span data-i18n-html="contact.hours">Ouvert tous les jours<br />8h00 – minuit</span>
           </div>
 
           <div class="contact-socials">
@@ -421,15 +427,15 @@
             </a>
           </div>
 
-          <a class="gold-link gold-link-light" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">Voir sur Google Maps</a>
+          <a class="gold-link gold-link-light" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer" data-i18n="contact.map">Voir sur Google Maps</a>
         </div>
       </div>
     </section>
 
     <div class="map-cta">
       <div class="container map-cta-inner">
-        <p>Une table pour ce soir ?</p>
-        <a class="btn btn-gold" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">Réserver sur WhatsApp</a>
+        <p data-i18n="cta.text">Une table pour ce soir ?</p>
+        <a class="btn btn-gold" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer" data-i18n="cta.btn">Réserver sur WhatsApp</a>
       </div>
     </div>
 
@@ -445,7 +451,7 @@
           <span class="footer-logo__mark" aria-hidden="true">M</span>
           <span class="footer-logo__name">Moodbucks</span>
         </span>
-        <p class="footer-tagline">Restaurant &amp; bar à Bangui. Cuisine locale et internationale, cocktails maison et musique live tous les soirs.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Restaurant &amp; bar à Bangui. Cuisine locale et internationale, cocktails maison et musique live tous les soirs.</p>
         <div class="footer-socials">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12c0-6.627-5.373-12-12-12Z"/></svg>
@@ -460,22 +466,22 @@
       </div>
 
       <nav class="footer-col" aria-label="Explorer">
-        <h2 class="footer-col__title">Explorer</h2>
-        <a href="#maison">La maison</a>
-        <a href="#menu">Le menu</a>
-        <a href="#evenements">Les événements</a>
-        <a href="#avis">Avis clients</a>
-        <a href="#noustrouver">Nous trouver</a>
+        <h2 class="footer-col__title" data-i18n="footer.explore">Explorer</h2>
+        <a href="#maison" data-i18n="nav.house">La maison</a>
+        <a href="#menu" data-i18n="footer.menuLink">Le menu</a>
+        <a href="#evenements" data-i18n="events.link">Les événements</a>
+        <a href="#avis" data-i18n="reviews.linkFooter">Avis clients</a>
+        <a href="#noustrouver" data-i18n="nav.find">Nous trouver</a>
       </nav>
 
       <div class="footer-col">
-        <h2 class="footer-col__title">Nous trouver</h2>
+        <h2 class="footer-col__title" data-i18n="footer.find">Nous trouver</h2>
         <a class="footer-line" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
             <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z" />
             <circle cx="12" cy="10" r="2.5" />
           </svg>
-          <span>PK0, à côté de l'ambassade des États-Unis<br />Bangui, République Centrafricaine</span>
+          <span data-i18n-html="common.address">PK0, à côté de l’ambassade des États-Unis<br />Bangui, République Centrafricaine</span>
         </a>
         <a class="footer-line" href="tel:+23672999955">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -491,7 +497,7 @@
           <span>khalil.haidar18@gmail.com</span>
         </a>
         <a class="footer-cta" href="https://wa.me/23672999955?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">
-          Réserver une table
+          <span data-i18n="nav.bookTable">Réserver une table</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
             <path d="M7 17 17 7M9 7h8v8" />
           </svg>
@@ -499,20 +505,20 @@
       </div>
 
       <div class="footer-col">
-        <h2 class="footer-col__title">Horaires</h2>
-        <p class="footer-hours"><span>Lundi – jeudi</span><span>8h – minuit</span></p>
-        <p class="footer-hours"><span>Vendredi – samedi</span><span>8h – 4h</span></p>
-        <p class="footer-hours"><span>Dimanche</span><span>10h – minuit</span></p>
-        <span class="footer-note">Service continu. Cuisine ouverte jusqu’à 23h.</span>
+        <h2 class="footer-col__title" data-i18n="footer.hoursTitle">Horaires</h2>
+        <p class="footer-hours"><span data-i18n="footer.days1">Lundi – jeudi</span><span data-i18n="footer.time1">8h – minuit</span></p>
+        <p class="footer-hours"><span data-i18n="footer.days2">Vendredi – samedi</span><span data-i18n="footer.time2">8h – 4h</span></p>
+        <p class="footer-hours"><span data-i18n="footer.days3">Dimanche</span><span data-i18n="footer.time3">10h – minuit</span></p>
+        <span class="footer-note" data-i18n="footer.note">Service continu. Cuisine ouverte jusqu’à 23h.</span>
       </div>
     </div>
 
     <div class="site-footer__bottom">
       <div class="container site-footer__bottom-inner">
-        <span>© 2026 Moodbucks · Bangui, République Centrafricaine</span>
+        <span data-i18n="footer.rights">© 2026 Moodbucks · Bangui, République Centrafricaine</span>
         <nav class="footer-legal" aria-label="Informations légales">
-          <a href="mentions-legales.html">Mentions légales &amp; CGU</a>
-          <a href="confidentialite.html">Politique de confidentialité</a>
+          <a href="mentions-legales.html" data-i18n="legal.mentions">Mentions légales &amp; CGU</a>
+          <a href="confidentialite.html" data-i18n="legal.privacy">Politique de confidentialité</a>
         </nav>
       </div>
     </div>
@@ -537,12 +543,13 @@
           <div class="modal-price" id="modalPrice"></div>
           <span class="ornament ornament-left" aria-hidden="true"></span>
           <div class="modal-desc" id="modalDesc"></div>
-          <div class="modal-ing-title">Ingrédients</div>
+          <div class="modal-ing-title" data-i18n="modal.ingredients">Ingrédients</div>
           <div class="modal-ingredients" id="modalIngredients"></div>
         </div>
         <div class="modal-actions">
-          <a href="#" id="modalWA" class="btn btn-gold" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
-          <a href="#evenements" class="btn btn-outline-dark" onclick="closeModal()">Voir les événements</a>
+          <button type="button" id="modalAdd" class="btn btn-outline-dark" data-i18n="modal.add">Ajouter au panier</button>
+          <a href="#" id="modalWA" class="btn btn-gold" target="_blank" rel="noopener noreferrer" data-i18n="modal.order">Commander sur WhatsApp</a>
+          <a href="#evenements" class="btn btn-outline-dark" onclick="closeModal()" data-i18n="modal.events">Voir les événements</a>
         </div>
       </div>
     </div>
@@ -561,18 +568,51 @@
           <div class="event-modal-details" id="eventModalDetails"></div>
         </div>
         <div class="event-modal-actions">
-          <a href="#" id="eventModalWA" class="btn btn-gold" target="_blank" rel="noopener noreferrer">Réserver sur WhatsApp</a>
-          <a href="#menu" class="btn btn-outline-dark" onclick="closeEventModal()">Voir le menu</a>
+          <a href="#" id="eventModalWA" class="btn btn-gold" target="_blank" rel="noopener noreferrer" data-i18n="modal.book">Réserver sur WhatsApp</a>
+          <a href="#menu" class="btn btn-outline-dark" onclick="closeEventModal()" data-i18n="modal.menu">Voir le menu</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Panier -->
+  <div class="cart-layer" id="cartLayer" hidden>
+    <button class="cart-scrim" id="cartScrim" type="button" aria-label="Fermer le panier"></button>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-head">
+        <div>
+          <span class="cart-eyebrow" id="cartTitle" data-i18n="cart.title">Panier</span>
+          <span class="cart-count-label" id="cartCountLabel"></span>
+        </div>
+        <button class="cart-close" id="cartClose" type="button" aria-label="Fermer le panier">✕</button>
+      </div>
+      <p class="cart-empty" id="cartEmpty" data-i18n="cart.empty">Votre panier est vide</p>
+      <ul class="cart-list" id="cartList" hidden></ul>
+      <div class="cart-foot" id="cartFoot" hidden>
+        <div class="cart-total">
+          <span data-i18n="cart.total">Total</span>
+          <strong id="cartTotal">0 FCFA</strong>
+        </div>
+        <p class="cart-note" data-i18n="cart.note">Votre commande est envoyée sur WhatsApp.</p>
+        <a class="btn btn-gold cart-order" id="cartOrder" href="#" target="_blank" rel="noopener noreferrer" data-i18n="cart.order">Commander sur WhatsApp</a>
+        <button class="cart-clear" id="cartClear" type="button" data-i18n="cart.clear">Vider le panier</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Bouton flottant panier -->
+  <button class="cart-fab" id="cartFab" type="button" aria-label="Ouvrir le panier">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 6h2l2.2 9.4a2 2 0 0 0 1.95 1.55h6.9a2 2 0 0 0 1.94-1.5L21 8H7" /><circle cx="10.5" cy="20" r="1.2" /><circle cx="17" cy="20" r="1.2" /></svg>
+    <span class="cart-fab__badge" id="cartFabBadge" hidden>0</span>
+  </button>
+
   <!-- Modules JS — chargés dans l'ordre de dépendance -->
+  <script src="js/i18n.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/eventModal.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/menuRender.js"></script>
+  <script src="js/cart.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/reviews.js"></script>
   <!-- dataLoader doit être chargé en dernier : il orchestre tous les autres -->

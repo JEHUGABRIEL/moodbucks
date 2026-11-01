@@ -212,16 +212,42 @@ function initScrollToTop() {
   });
 }
 
+/* ── SOIRÉES (cartes de la section événements) ─────────────────────────────── */
+
+/**
+ * Remplit les cartes de soirées avec les données de data.json, selon la langue.
+ * Appelé après le chargement des données et à chaque changement de langue.
+ */
+function renderEvents() {
+  if (!window.EVENTS) return;
+
+  const locale = typeof getLocale === 'function' ? getLocale() : 'fr';
+
+  document.querySelectorAll('[data-event]').forEach(card => {
+    const event = window.EVENTS[card.dataset.event];
+    if (!event) return;
+
+    const dateEl  = card.querySelector('.event-date');
+    const titleEl = card.querySelector('h3');
+    const descEl  = card.querySelector('p');
+
+    if (dateEl)  dateEl.textContent  = event['date_' + locale]  || event.date;
+    if (titleEl) titleEl.textContent = event['title_' + locale] || event.title;
+    if (descEl)  descEl.textContent  = event['desc_' + locale]  || event.desc;
+  });
+}
+
 /* ── CLAVIER ───────────────────────────────────────────────────────────────── */
 
 /**
- * Escape ferme les modales et retire le verrou de défilement.
+ * Escape ferme les modales et le panier, et retire le verrou de défilement.
  */
 function initKeyboardListeners() {
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
     if (typeof closeModal      === 'function') closeModal();
     if (typeof closeEventModal === 'function') closeEventModal();
+    if (typeof closeCart       === 'function') closeCart();
   });
 }
 

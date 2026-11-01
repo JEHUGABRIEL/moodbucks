@@ -10,7 +10,10 @@
         "tarif": "Gratuit (Consommation min.)",
         "reservation": "Recommandée"
       },
-      "img": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=80"
+      "img": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=80",
+      "date_en": "Every Thursday • 9 pm",
+      "title_en": "Live Music Night",
+      "desc_en": "Our musicians play live. A guaranteed festive atmosphere for your evening, with our house cocktails and a unique mood in Bangui."
     },
     "open-mic-vendredi": {
       "date": "Chaque vendredi • 20h",
@@ -22,7 +25,10 @@
         "tarif": "Gratuit (Participation possible)",
         "reservation": "Sur place"
       },
-      "img": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=700&q=80"
+      "img": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=700&q=80",
+      "date_en": "Every Friday • 8 pm",
+      "title_en": "Open Mic Night",
+      "desc_en": "Your moment to shine: singers, poets and comedians on the house stage, for an evening full of local talent and friendliness."
     },
     "dj-samedi": {
       "date": "Chaque samedi • 22h",
@@ -34,7 +40,10 @@
         "tarif": "2 500 FCFA (Gratuit avant 23h30)",
         "reservation": "VIP tables disponibles"
       },
-      "img": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=700&q=80"
+      "img": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=700&q=80",
+      "date_en": "Every Saturday • 10 pm",
+      "title_en": "DJ Night – Boom Boom Saturdays",
+      "desc_en": "Our resident DJs chain the best remixes until dawn. Dancing guaranteed, cool lighting, cold drinks and positive energy."
     },
     "brunch-dimanche": {
       "date": "Chaque dimanche • 10h",
@@ -46,7 +55,10 @@
         "tarif": "À la carte",
         "reservation": "Pour groupes +6"
       },
-      "img": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=700&q=80"
+      "img": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=700&q=80",
+      "date_en": "Every Sunday • 10 am",
+      "title_en": "Festive Brunch",
+      "desc_en": "Start your Sunday in style with a local buffet, fresh juices and background music. Ideal with family or friends."
     },
     "ladies-night": {
       "date": "1er mercredi de chaque mois • 19h",
@@ -58,7 +70,10 @@
         "tarif": "Gratuit pour les femmes",
         "reservation": "Groupes bienvenues"
       },
-      "img": "https://images.unsplash.com/photo-1549887534-f64a3b6f6e3e?w=700&q=80"
+      "img": "https://images.unsplash.com/photo-1549887534-f64a3b6f6e3e?w=700&q=80",
+      "date_en": "First Wednesday of every month • 7 pm",
+      "title_en": "Ladies Night",
+      "desc_en": "A special evening for women: half-price cocktails until 10 pm, DJ and animations. Groups welcome."
     },
     "match-foot": {
       "date": "Jours de match • En direct",
@@ -70,7 +85,10 @@
         "tarif": "Gratuit",
         "reservation": "Tables réservées sur demande"
       },
-      "img": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=700&q=80"
+      "img": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=700&q=80",
+      "date_en": "Match days • Live",
+      "title_en": "Live Football",
+      "desc_en": "All the big matches (World Cup, CAN, Champions League) on a giant screen. Stadium atmosphere, snacks and drinks."
     }
   }
 }

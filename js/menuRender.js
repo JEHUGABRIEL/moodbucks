@@ -41,15 +41,18 @@ function menuSlug(text) {
 }
 
 /**
- * Construit une ligne de carte cliquable.
+ * Construit une ligne de carte : le plat cliquable et le bouton d'ajout au panier.
  * @param {object} item - plat de menu.json (id, name, price, desc)
- * @returns {HTMLButtonElement}
+ * @returns {HTMLDivElement}
  */
 function buildMenuLine(item) {
-  const line = document.createElement('button');
-  line.type = 'button';
-  line.className = 'menu-line';
-  line.addEventListener('click', () => {
+  const row = document.createElement('div');
+  row.className = 'menu-line';
+
+  const main = document.createElement('button');
+  main.type = 'button';
+  main.className = 'menu-line-main';
+  main.addEventListener('click', () => {
     if (typeof openPlat === 'function') openPlat(item.id);
   });
 
@@ -72,16 +75,30 @@ function buildMenuLine(item) {
   price.append(' ', unit);
 
   head.append(name, dots, price);
-  line.append(head);
+  main.append(head);
 
   if (item.desc) {
     const desc = document.createElement('span');
     desc.className = 'menu-line-desc';
     desc.textContent = item.desc;
-    line.append(desc);
+    main.append(desc);
   }
 
-  return line;
+  const add = document.createElement('button');
+  add.type = 'button';
+  add.className = 'menu-line-add';
+  add.textContent = '+';
+  add.setAttribute(
+    'aria-label',
+    `${typeof t === 'function' ? t('modal.add') : 'Ajouter au panier'} — ${item.name}`
+  );
+  add.addEventListener('click', event => {
+    event.stopPropagation();
+    if (typeof addToCart === 'function') addToCart(item.id);
+  });
+
+  row.append(main, add);
+  return row;
 }
 
 /**
@@ -102,7 +119,9 @@ function renderMenu() {
   if (categories.length === 0) {
     const message = document.createElement('p');
     message.className = 'menu-empty';
-    message.textContent = 'La carte n’a pas pu être chargée. Écrivez-nous sur WhatsApp pour la recevoir.';
+    message.textContent = typeof t === 'function'
+      ? t('menu.empty')
+      : 'La carte n’a pas pu être chargée.';
     panelsEl.append(message);
     return;
   }
@@ -113,7 +132,7 @@ function renderMenu() {
     const tab = document.createElement('button');
     tab.type = 'button';
     tab.className = 'tab-btn';
-    tab.textContent = category.name;
+    tab.textContent = typeof tCategory === 'function' ? tCategory(category.name) : category.name;
     tab.setAttribute('role', 'tab');
     tab.addEventListener('click', () => switchTab(slug, tab));
     tabsEl.append(tab);
@@ -145,4 +164,16 @@ function renderMenu() {
 
     panelsEl.append(panel);
   });
+}
+
+/**
+ * Relit les libellés après un changement de langue.
+ */
+function refreshMenuLabels() {
+  if (!document.getElementById('menuPanels')) return;
+
+  renderMenu();
+
+  const firstTab = document.querySelector('.tab-btn');
+  if (firstTab) firstTab.click();
 }

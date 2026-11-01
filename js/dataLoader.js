@@ -32,6 +32,7 @@ async function loadData() {
     window.PLATS  = {};
 
     if (typeof renderMenu === 'function') renderMenu();
+    if (typeof renderEvents === 'function') renderEvents();
 
     console.info(
       `[dataLoader.js] ✅ ${window.MENU.length} catégories, ` +

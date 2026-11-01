@@ -17,6 +17,9 @@ function openPlat(id) {
     return;
   }
 
+  // Mémorisé pour l'ajout au panier depuis la fiche
+  window.currentPlatId = id;
+
   // Remplir les champs texte
   document.getElementById('modalTag').textContent   = p.tag;
   document.getElementById('modalName').textContent  = p.name;
