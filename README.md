@@ -29,8 +29,11 @@ index.html   Page unique : en-tête, hero, maison, triptyque, menu,
              bande qualité, événements, carte/contact, pied de page, modales
 style.css    Charte, mise en page et responsive (940 / 760 / 560 px)
 js/
-  data.json      Plats et événements (source de vérité du contenu)
-  dataLoader.js  Charge data.json, expose PLATS / EVENTS, lance l'UI
+  menu.json      Carte réelle (17 catégories, 161 plats) relevée sur
+                 menu.omegasoftware.ca/moodbucks
+  data.json      Événements de la maison
+  dataLoader.js  Charge menu.json + data.json, lance renderMenu() et l'UI
+  menuRender.js  Construit les onglets et les lignes de la carte, remplit PLATS
   tabs.js        Onglets du menu (switchTab)
   modal.js       Fiche plat (galerie d'images, ingrédients, WhatsApp)
   eventModal.js  Fiche événement (détails, réservation WhatsApp)
@@ -41,9 +44,11 @@ README.md
 ## Personnalisation
 
 - **Couleurs et polices** : variables `:root` en haut de `style.css`.
-- **Plats et événements** : `js/data.json`, puis la ligne correspondante dans
-  `index.html` (`onclick="openPlat('id')"` / `onclick="openEvent('id')"`).
-  Les identifiants du HTML doivent exister dans le JSON et inversement.
+- **Plats** : `js/menu.json` (`categories[].items[]` avec `id`, `name`, `price`,
+  `desc`). La carte est rendue automatiquement au chargement ; la photo de fiche
+  est choisie par catégorie dans `MENU_CATEGORY_IMAGES` (`js/menuRender.js`).
+- **Événements** : `js/data.json`, plus une carte dans `index.html`
+  (`onclick="openEvent('id')"`) dont l'identifiant doit exister dans le JSON.
 - **Photos** : URLs Unsplash dans `index.html` et, pour le carrousel de la
   maison, dans `PHOTOS` de `js/ui.js`.
 - **Contact** : numéro WhatsApp et liens Maps présents dans `index.html`

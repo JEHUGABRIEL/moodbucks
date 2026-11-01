@@ -1,39 +1,51 @@
 /* ============================================================================
-   dataLoader.js — Chargement des données JSON et initialisation de l'app
-   
+   dataLoader.js — Chargement des données et initialisation de l'app
+
    Ordre d'exécution :
-   1. Fetch data.json
-   2. Expose PLATS et EVENTS sur window (accès global)
-   3. Lance initUI()   — fond hero, scroll-to-top, progress bar, clavier
-   4. Lance initTabs() — active le premier onglet menu
+   1. Fetch js/menu.json (carte réelle) et js/data.json (événements)
+   2. Expose MENU / EVENTS sur window, construit les fiches plat (PLATS)
+   3. Lance renderMenu() — onglets et lignes de la carte
+   4. Lance initUI()   — en-tête, diaporama, carrousel, révélations, clavier
+   5. Lance initTabs() — active la première catégorie
    ========================================================================== */
 
 /**
- * Charge le fichier data.json, expose les données globalement
+ * Charge la carte et les événements, expose les données globalement,
  * puis initialise tous les modules UI.
  */
 async function loadData() {
   try {
-    const response = await fetch('./js/data.json');
+    const [menuResponse, dataResponse] = await Promise.all([
+      fetch('./js/menu.json'),
+      fetch('./js/data.json')
+    ]);
 
-    if (!response.ok) {
-      throw new Error(`[dataLoader.js] Impossible de charger data.json — HTTP ${response.status}`);
+    if (!menuResponse.ok) {
+      throw new Error(`[dataLoader.js] Impossible de charger menu.json — HTTP ${menuResponse.status}`);
     }
 
-    const data = await response.json();
+    const menu = await menuResponse.json();
+    const data = dataResponse.ok ? await dataResponse.json() : { events: {} };
 
-    // Exposer les données globalement pour modal.js et eventModal.js
-    window.PLATS  = data.plats;
-    window.EVENTS = data.events;
+    window.MENU   = Array.isArray(menu.categories) ? menu.categories : [];
+    window.EVENTS = data.events || {};
+    window.PLATS  = {};
 
-    console.info(`[dataLoader.js] ✅ ${Object.keys(window.PLATS).length} plats chargés`);
-    console.info(`[dataLoader.js] ✅ ${Object.keys(window.EVENTS).length} événements chargés`);
+    if (typeof renderMenu === 'function') renderMenu();
+
+    console.info(
+      `[dataLoader.js] ✅ ${window.MENU.length} catégories, ` +
+      `${Object.keys(window.PLATS).length} plats, ` +
+      `${Object.keys(window.EVENTS).length} événements`
+    );
 
   } catch (err) {
     console.error('[dataLoader.js] ❌ Erreur de chargement :', err.message);
-    // Fallback : objets vides pour éviter les crashes
-    window.PLATS  = {};
+    // Fallback : structures vides pour éviter les crashes
+    window.MENU   = [];
     window.EVENTS = {};
+    window.PLATS  = {};
+    if (typeof renderMenu === 'function') renderMenu();
   } finally {
     // Initialiser l'interface quelle que soit l'issue du fetch
     initUI();

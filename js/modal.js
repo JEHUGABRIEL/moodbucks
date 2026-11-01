@@ -21,10 +21,16 @@ function openPlat(id) {
   document.getElementById('modalTag').textContent   = p.tag;
   document.getElementById('modalName').textContent  = p.name;
   document.getElementById('modalPrice').textContent = p.price;
-  document.getElementById('modalDesc').textContent  = p.desc;
 
-  // Ingrédients
-  document.getElementById('modalIngredients').innerHTML = p.ingredients
+  const descEl = document.getElementById('modalDesc');
+  descEl.textContent = p.desc || '';
+  descEl.hidden = !p.desc;
+
+  // Ingrédients : masqués quand la carte ne les détaille pas
+  const ingredients = Array.isArray(p.ingredients) ? p.ingredients : [];
+  const ingTitle    = document.querySelector('.modal-ing-title');
+  if (ingTitle) ingTitle.hidden = ingredients.length === 0;
+  document.getElementById('modalIngredients').innerHTML = ingredients
     .map(i => `<span class="ing-tag">${i}</span>`)
     .join('');
 

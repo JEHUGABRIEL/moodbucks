@@ -178,248 +178,17 @@
           <span class="caps">Menu</span>
           <span class="ornament" aria-hidden="true"></span>
           <p>
-            La carte suit le marché : grillades à la braise, poissons du fleuve,
-            petits déjeuners généreux, plats internationaux et cocktails préparés au bar.
+            Pizzas pétries sur place, plats chinois mijotés, grillades au feu,
+            burgers maison, sandwichs libanais et petits déjeuners : la carte
+            complète de la maison, servie du matin à minuit.
           </p>
         </div>
 
-        <div class="menu-tabs" role="tablist" aria-label="Catégories du menu">
-          <button class="tab-btn" type="button" onclick="switchTab('grillades', this)">Grillades</button>
-          <button class="tab-btn" type="button" onclick="switchTab('poissons', this)">Poissons</button>
-          <button class="tab-btn" type="button" onclick="switchTab('petitdej', this)">Petit déjeuner</button>
-          <button class="tab-btn" type="button" onclick="switchTab('international', this)">International</button>
-          <button class="tab-btn" type="button" onclick="switchTab('cocktails', this)">Cocktails</button>
-          <button class="tab-btn" type="button" onclick="switchTab('boissons', this)">Boissons</button>
-          <button class="tab-btn" type="button" onclick="switchTab('accomp', this)">Accompagnements</button>
-        </div>
+        <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Catégories du menu"></div>
 
-        <div class="menu-panels">
+        <div class="menu-panels" id="menuPanels"></div>
 
-          <!-- GRILLADES -->
-          <div id="tab-grillades" class="menu-panel">
-            <button class="menu-line" type="button" onclick="openPlat('poulet-braise')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Poulet Braisé</span>
-                <span class="menu-tag">Spécialité</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 500 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Poulet fermier mariné aux épices locales et grillé lentement sur braise.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('brochettes')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Brochettes de Bœuf</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 200 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Bœuf tendre mariné, grillé sur brochette, sauce piment maison.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('poulet-dg')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Poulet DG</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 800 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Poulet mijoté en sauce tomate avec banane plantain.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('yabanda')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Yabanda</span>
-                <span class="menu-tag">Centrafrique</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 200 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Recette traditionnelle maison, viande locale et feuilles de manioc.</span>
-            </button>
-          </div>
-
-          <!-- POISSONS -->
-          <div id="tab-poissons" class="menu-panel">
-            <button class="menu-line" type="button" onclick="openPlat('capitaine')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Capitaine Grillé</span>
-                <span class="menu-tag">Oubangui</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">2 000 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Le poisson roi du fleuve, grillé entier, épices locales et citron.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('tilapia')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Tilapia Grillé</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 500 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Tilapia frais grillé entier à la braise, herbes et épices locales.</span>
-            </button>
-          </div>
-
-          <!-- PETIT DÉJEUNER -->
-          <div id="tab-petitdej" class="menu-panel">
-            <button class="menu-line" type="button" onclick="openPlat('petit-dej')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Petit Déjeuner Complet</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 000 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Pain frais, œufs au choix, café ou thé et jus de fruits pressé.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('omelette')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Omelette aux Légumes</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">800 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Omelette moelleuse garnie de légumes frais du marché.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('salade')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Salade César</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 500 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Romaine croquante, croûtons dorés, parmesan et sauce maison.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('soupe')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Soupe du Jour</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">800 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Préparée avec les légumes frais du marché, selon l’arrivage.</span>
-            </button>
-          </div>
-
-          <!-- INTERNATIONAL -->
-          <div id="tab-international" class="menu-panel">
-            <button class="menu-line" type="button" onclick="openPlat('burger')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Burger Moodbucks</span>
-                <span class="menu-tag">Signature</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">2 500 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Viande fraîche locale, pain brioche et sauce Moodbucks maison.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('pizza')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Pizza Margherita</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">3 000 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Pâte maison, tomate fraîche, mozzarella fondue et basilic.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('pasta')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Pâtes Bolognaise</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">2 200 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Pâtes al dente et sauce bolognaise mijotée à la viande locale.</span>
-            </button>
-          </div>
-
-          <!-- COCKTAILS -->
-          <div id="tab-cocktails" class="menu-panel">
-            <button class="menu-line" type="button" onclick="openPlat('cocktail-signature')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Moodbucks Signature</span>
-                <span class="menu-tag">Signature</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 500 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Le cocktail de la maison, fruits tropicaux frais et sirop maison.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('mojito')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Mojito Tropical</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 200 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Rhum, menthe fraîche, citron vert et une touche d’ananas.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('bissap-cocktail')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Bissap Sunrise</span>
-                <span class="menu-tag">Local</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">1 300 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Infusion de bissap, gin, citron frais et miel local.</span>
-            </button>
-          </div>
-
-          <!-- BOISSONS -->
-          <div id="tab-boissons" class="menu-panel">
-            <button class="menu-line" type="button" onclick="openPlat('biere')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Bière Fraîche</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">600 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Mocaf, Castel ou Heineken, servie bien fraîche.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('jus')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Jus Frais Maison</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">500 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Pressé à la commande : mangue, bissap, goyave ou ananas.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('cafe')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Café &amp; Thé</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">400 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Expresso, café allongé ou thé, servi avec du sucre de canne.</span>
-            </button>
-          </div>
-
-          <!-- ACCOMPAGNEMENTS -->
-          <div id="tab-accomp" class="menu-panel">
-            <button class="menu-line" type="button" onclick="openPlat('frites')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Frites Maison</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">400 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Pommes de terre fraîches, coupées et frites maison.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('plantain')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Banane Plantain</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">300 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Grillée ou frite, caramélisée et fondante.</span>
-            </button>
-
-            <button class="menu-line" type="button" onclick="openPlat('riz')">
-              <span class="menu-line-head">
-                <span class="menu-line-name">Riz Blanc</span>
-                <span class="menu-line-dots"></span>
-                <span class="menu-line-price">300 <small>FCFA</small></span>
-              </span>
-              <span class="menu-line-desc">Riz blanc cuit à la perfection.</span>
-            </button>
-          </div>
-        </div>
+        <noscript><p class="menu-empty">La carte s’affiche avec JavaScript. Écrivez-nous sur WhatsApp pour la recevoir.</p></noscript>
 
         <div class="dark-panel">
           <div>
@@ -580,7 +349,7 @@
               <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z" />
               <circle cx="12" cy="10" r="2.5" />
             </svg>
-            <span>1er Arrondissement<br />Bangui, République Centrafricaine</span>
+            <span>PK0, à côté de l'ambassade des États-Unis<br />Bangui, République Centrafricaine</span>
           </a>
           <a class="contact-line" href="tel:+23672999955">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -684,7 +453,7 @@
             <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z" />
             <circle cx="12" cy="10" r="2.5" />
           </svg>
-          <span>1er Arrondissement, Bangui<br />République Centrafricaine</span>
+          <span>PK0, à côté de l'ambassade des États-Unis<br />Bangui, République Centrafricaine</span>
         </a>
         <a class="footer-line" href="tel:+23672999955">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -781,6 +550,7 @@
   <script src="js/modal.js"></script>
   <script src="js/eventModal.js"></script>
   <script src="js/tabs.js"></script>
+  <script src="js/menuRender.js"></script>
   <script src="js/ui.js"></script>
   <!-- dataLoader doit être chargé en dernier : il orchestre tous les autres -->
   <script src="js/dataLoader.js"></script>

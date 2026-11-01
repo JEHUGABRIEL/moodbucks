@@ -1,0 +1,1057 @@
+{
+  "source": "https://menu.omegasoftware.ca/moodbucks",
+  "releve": "2026-11-01",
+  "categories": [
+    {
+      "name": "Plats",
+      "items": [
+        {
+          "id": "crispy-chicken",
+          "name": "Crispy Chicken",
+          "price": "7 500 FCFA",
+          "desc": "Lanière de poulet croustillantes, frites, coleslaw"
+        },
+        {
+          "id": "escalope-chiken",
+          "name": "Escalope Chiken",
+          "price": "7 000 FCFA",
+          "desc": "Escalop poulet, ketchup, colslaw, cornichons, ail, frites"
+        },
+        {
+          "id": "taouk-plat",
+          "name": "Taouk Plat",
+          "price": "7 000 FCFA",
+          "desc": "Taouk poulet, cornichons, coleslaw, frites, ail"
+        },
+        {
+          "id": "chicken-plate",
+          "name": "Chicken Plate",
+          "price": "6 500 FCFA",
+          "desc": "Poulet grillée, frites ou riz, pain Libanais"
+        },
+        {
+          "id": "chiken-with-cream",
+          "name": "Chiken With Cream",
+          "price": "7 500 FCFA",
+          "desc": "Poulet grillée avec crème de champignons, frites ou riz, pain"
+        },
+        {
+          "id": "beef-plate",
+          "name": "Beef Plate",
+          "price": "6 500 FCFA",
+          "desc": "Boeuf grillée, frites ou riz, pain"
+        },
+        {
+          "id": "beef-with-cream-mush",
+          "name": "Beef With Cream Mush",
+          "price": "7 500 FCFA",
+          "desc": "Boeuf grillée avec crème de champignons, frites ou riz, pain"
+        },
+        {
+          "id": "shrimp-mwith-creamy",
+          "name": "Shrimp Mwith Creamy",
+          "price": "10 500 FCFA",
+          "desc": "Crevette grillée avec crème de champignons, frites ou riz, pain"
+        }
+      ]
+    },
+    {
+      "name": "Pizza",
+      "items": [
+        {
+          "id": "pizza-margerita",
+          "name": "Pizza Margerita",
+          "price": "5 500 FCFA",
+          "desc": "Fromage mozzarella, sauce tomate, oregano"
+        },
+        {
+          "id": "lahme-b-ajin",
+          "name": "Lahme B Ajin",
+          "price": "6 500 FCFA",
+          "desc": "Viande hachée, tomate, onion, sauce tomate"
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni",
+          "price": "6 500 FCFA",
+          "desc": "Pepperoni, fromage mozzarella, sauce tomate, origan"
+        },
+        {
+          "id": "bolognaise",
+          "name": "Bolognaise",
+          "price": "7 500 FCFA",
+          "desc": "Viande hachée, fromage mozzarella, sauce tomate, origan"
+        },
+        {
+          "id": "mortadelle",
+          "name": "Mortadelle",
+          "price": "7 500 FCFA",
+          "desc": "Mortadelle, fromage mozzarella, champignons, olive noir, origan"
+        },
+        {
+          "id": "4-fromage",
+          "name": "4 Fromage",
+          "price": "7 500 FCFA",
+          "desc": "Mozzarella, roquefort, fromage suisse, parmesan"
+        },
+        {
+          "id": "pizza-au-legume",
+          "name": "Pizza Au Legume",
+          "price": "7 500 FCFA",
+          "desc": "Poivrons, maiis, oignons, tomate, olives, haricotes, pousse de bambo, basilic, menthe, origan, champignons ( choisir 4 legumes)"
+        },
+        {
+          "id": "alfredo-piza",
+          "name": "Alfredo Piza",
+          "price": "8 000 FCFA",
+          "desc": "Poitrine de poulet grillé, champignons, oignons, fromage suisse et mozzarella, sauce alfredo, origan"
+        },
+        {
+          "id": "pizza-crevette",
+          "name": "Pizza Crevette",
+          "price": "10 000 FCFA",
+          "desc": "Crevettes, mozzarella, tomate, sauce pesto"
+        }
+      ]
+    },
+    {
+      "name": "Entrées",
+      "items": [
+        {
+          "id": "combo-appetizers",
+          "name": "Combo Appetizers",
+          "price": "17 000 FCFA",
+          "desc": "2 Vegetable Spring Rolls, 2 Cheese Spring Rolls, 2 Deep Fried Shrimp, 2 Shrimp toast, 2 Chicken samosa, Dynamite chicken, Dynamite Shrimp"
+        },
+        {
+          "id": "vegetable-spring-rolls-2pcs",
+          "name": "Vegetable Spring Rolls (2pcs)",
+          "price": "3 000 FCFA",
+          "desc": "Rouleaux de printemps aux légumes"
+        },
+        {
+          "id": "cheese-rolls-4pcs",
+          "name": "Cheese Rolls (4pcs)",
+          "price": "3 000 FCFA",
+          "desc": "Rouleaux au fromage"
+        },
+        {
+          "id": "mozzarella-sticks-5pcs",
+          "name": "Mozzarella Sticks (5pcs)",
+          "price": "4 000 FCFA",
+          "desc": "Chicken Satay Samosa (1pcs)"
+        },
+        {
+          "id": "chicken-satay-samosa-1pcs",
+          "name": "Chicken Satay Samosa (1pcs)",
+          "price": "2 000 FCFA",
+          "desc": "Samosa au poulet"
+        },
+        {
+          "id": "shrimp-sesame-toast-3pcs",
+          "name": "Shrimp Sesame Toast (3pcs)",
+          "price": "4 500 FCFA",
+          "desc": "Toast de crevettes au sésame"
+        },
+        {
+          "id": "shrimp-balls-kwelin-2pcs",
+          "name": "Shrimp Balls Kwelin (2pcs)",
+          "price": "3 500 FCFA",
+          "desc": "Deep Fried Shrimp (5pcs)"
+        },
+        {
+          "id": "deep-fried-shrimp-5pcs",
+          "name": "Deep Fried Shrimp (5pcs)",
+          "price": "6 000 FCFA",
+          "desc": "Crevette panée grillée"
+        },
+        {
+          "id": "dynamite-shrimp",
+          "name": "Dynamite Shrimp",
+          "price": "6 000 FCFA",
+          "desc": "Crevette frite avec sauce SPICY"
+        },
+        {
+          "id": "dynamite-chicken",
+          "name": "Dynamite Chicken",
+          "price": "4 000 FCFA",
+          "desc": "Poulet frit avec sauce SPICY"
+        },
+        {
+          "id": "hoummus",
+          "name": "Hoummus",
+          "price": "3 000 FCFA",
+          "desc": "Purée de pois chiches servie avec pain libanais"
+        },
+        {
+          "id": "baba-ghanouje",
+          "name": "Baba Ghanouje",
+          "price": "3 000 FCFA",
+          "desc": "Purée d'aubergines servie avec pain libanais"
+        },
+        {
+          "id": "french-fries-box",
+          "name": "French Fries Box",
+          "price": "2 000 FCFA",
+          "desc": "Boite de frites"
+        },
+        {
+          "id": "french-fries-plate",
+          "name": "French Fries Plate",
+          "price": "3 000 FCFA",
+          "desc": "Assiette de frites servie avec coleslaw et sauce"
+        }
+      ]
+    },
+    {
+      "name": "Sandwiches",
+      "items": [
+        {
+          "id": "fajita-chicken",
+          "name": "Fajita Chicken",
+          "price": "4 500 FCFA",
+          "desc": "Poulet fajita, poivrons, maiis, oignons, mozzarella, sauce avocat"
+        },
+        {
+          "id": "rca-poulet",
+          "name": "Rca Poulet",
+          "price": "3 000 FCFA",
+          "desc": "Poulet, frite, cornichons, sauce ail"
+        },
+        {
+          "id": "escalope-chicken",
+          "name": "Escalope Chicken",
+          "price": "4 000 FCFA",
+          "desc": "Escalope poulet, ketchup, coleslaw, cornichons, ail"
+        },
+        {
+          "id": "taouk-sandwish",
+          "name": "Taouk Sandwish",
+          "price": "4 000 FCFA",
+          "desc": "Taouk poulet, cornichons, coleslaw, frites, ail"
+        },
+        {
+          "id": "chicken-pesto",
+          "name": "Chicken Pesto",
+          "price": "4 500 FCFA",
+          "desc": "Poulet, tomate, sauce pesto, emental"
+        },
+        {
+          "id": "potato-veg",
+          "name": "Potato Veg",
+          "price": "3 000 FCFA",
+          "desc": "Frites, cornichons, coleslaw, ketchup, ail"
+        },
+        {
+          "id": "fransisco-sand",
+          "name": "Fransisco Sand",
+          "price": "4 000 FCFA",
+          "desc": "Poulet, salade, maiis, mayo sauce, soja"
+        },
+        {
+          "id": "philadelphia",
+          "name": "Philadelphia",
+          "price": "4 000 FCFA",
+          "desc": "Boeuf, mozzarella, oignons, poivrons, champignons, mayonnaise"
+        },
+        {
+          "id": "creamy-steak",
+          "name": "Creamy Steak",
+          "price": "4 000 FCFA",
+          "desc": "Boeuf, champignons, oignons, sauce crème fraiche"
+        },
+        {
+          "id": "chicken-sub",
+          "name": "Chicken Sub",
+          "price": "4 000 FCFA",
+          "desc": "Poulet, mozzarella, maïs, salade, cornichons"
+        },
+        {
+          "id": "hotdog",
+          "name": "Hotdog",
+          "price": "4 000 FCFA",
+          "desc": "Boeuf, mayonnaise, moutarde, maïs, fromage, chips, ketchup"
+        },
+        {
+          "id": "shawarma-beef",
+          "name": "Shawarma Beef",
+          "price": "3 000 FCFA",
+          "desc": "Shawarma au boeuf, tomates, cornichons, salade biwaz, sauce de Tarator"
+        },
+        {
+          "id": "shawarma-chicken",
+          "name": "Shawarma Chicken",
+          "price": "3 000 FCFA",
+          "desc": "Shawarma poulet, frites, cornichons, sauce ail"
+        },
+        {
+          "id": "chicken-blast-sandw",
+          "name": "Chicken Blast Sandw",
+          "price": "4 000 FCFA",
+          "desc": "Crispy poulets, salade, cornichons, sauce secret, pain tortilla"
+        },
+        {
+          "id": "shrimp-blast-sandw",
+          "name": "Shrimp Blast Sandw",
+          "price": "5 000 FCFA",
+          "desc": "Crispy crevettes, salade, cornichons, sauce secret, pain tortilla"
+        },
+        {
+          "id": "smoked-salmon",
+          "name": "Smoked Salmon",
+          "price": "7 000 FCFA",
+          "desc": "Salmon, salade, tomate, concombre, sauce guacamole"
+        },
+        {
+          "id": "falafel",
+          "name": "Falafel",
+          "price": "3 500 FCFA",
+          "desc": "Falafel, persil, tomate, cornichons, menthe, sauce tarator"
+        },
+        {
+          "id": "falafel-plate-8-pcs",
+          "name": "Falafel Plate (8 Pcs)",
+          "price": "5 000 FCFA",
+          "desc": "Falafel, persil, tomate, cornichons, menthe, sauce tarator"
+        }
+      ]
+    },
+    {
+      "name": "Salade",
+      "items": [
+        {
+          "id": "chicken-ceaser-salad",
+          "name": "Chicken Ceaser Salad",
+          "price": "6 000 FCFA",
+          "desc": "Salade, poulet, croûtons, tomate, parmesan"
+        },
+        {
+          "id": "greek-salad",
+          "name": "Greek Salad",
+          "price": "5 000 FCFA",
+          "desc": "Salade, tomate, concombre, olives, oignon, menthe, poivron, Feta"
+        },
+        {
+          "id": "fatoush",
+          "name": "Fatoush",
+          "price": "4 500 FCFA",
+          "desc": "Salade, tomate, concombre, persil, chou, carotte, oignon, menthe, poivron, sumac, pain libanais"
+        },
+        {
+          "id": "halloumi-salade",
+          "name": "Halloumi Salade",
+          "price": "6 500 FCFA",
+          "desc": "Halloumi, pois chiche, salade, tomate, concombre, oignons verts, menthe"
+        },
+        {
+          "id": "quinoa-salad",
+          "name": "Quinoa Salad",
+          "price": "6 000 FCFA",
+          "desc": "Quinoa, brocoli, haricot, origan, oignon, maïs doux, poivron vert, persil"
+        },
+        {
+          "id": "salmon-salad",
+          "name": "Salmon Salad",
+          "price": "9 000 FCFA",
+          "desc": "Salade, saumon, avocat, concombre, câpres, citron"
+        },
+        {
+          "id": "crab-salad",
+          "name": "Crab Salad",
+          "price": "7 000 FCFA",
+          "desc": "Crabe, nouilles, chou, concombre, carottes"
+        }
+      ]
+    },
+    {
+      "name": "Burgers",
+      "items": [
+        {
+          "id": "classic-burger",
+          "name": "Classic Burger",
+          "price": "4 000 FCFA",
+          "desc": "Boeuf, tomate, oignon, salade, cornichons"
+        },
+        {
+          "id": "cheese-classic-burger",
+          "name": "Cheese Classic Burger",
+          "price": "5 000 FCFA",
+          "desc": "Boeuf, tomate, oignon, salade, cornichons, fromage"
+        },
+        {
+          "id": "onion-burger",
+          "name": "Onion  Burger",
+          "price": "4 000 FCFA",
+          "desc": "Boeuf, oignons, vinaigre balsamique, tomate, salade"
+        },
+        {
+          "id": "veggie-burger",
+          "name": "Veggie Burger",
+          "price": "5 000 FCFA",
+          "desc": "Falafel, persil, tomate, cornichons, menthe, sauce tarator"
+        },
+        {
+          "id": "halloumi-burger",
+          "name": "Halloumi Burger",
+          "price": "5 000 FCFA",
+          "desc": "Halloumi, salade, tomates et poivrons grillée, oignons, cream chesse"
+        },
+        {
+          "id": "swiss-mushroom-burger",
+          "name": "Swiss Mushroom Burger",
+          "price": "5 000 FCFA",
+          "desc": "Boeuf, champignons, salade, oignons, fromage suisse, mayonnaise"
+        },
+        {
+          "id": "crispy-baffalo-burger",
+          "name": "Crispy Baffalo Burger",
+          "price": "4 000 FCFA",
+          "desc": "Poulet, salade, cornichons, SPICY"
+        },
+        {
+          "id": "dream-burger",
+          "name": "Dream Burger",
+          "price": "4 000 FCFA",
+          "desc": "Poulet croustillant, coleslaw, sauce special"
+        },
+        {
+          "id": "chicken-breast-burger",
+          "name": "Chicken breast Burger",
+          "price": "5 000 FCFA",
+          "desc": "Poulet, salade, cornichons, tomate, emmental"
+        },
+        {
+          "id": "excellent-burger",
+          "name": "Excellent Burger",
+          "price": "5 000 FCFA",
+          "desc": "Boeuf, salade, champignons, oignons, tomates, cornichons, fromage, sauce special"
+        },
+        {
+          "id": "fish-burger",
+          "name": "Fish Burger",
+          "price": "5 000 FCFA",
+          "desc": "Poisson croustillant, sauce tartare"
+        },
+        {
+          "id": "moodbucks-burger",
+          "name": "Moodbucks Burger",
+          "price": "6 000 FCFA",
+          "desc": "Deux boeuf, emental, salade, tomate grillée, oignons, cornichons"
+        },
+        {
+          "id": "combo",
+          "name": "Combo",
+          "price": "2 000 FCFA",
+          "desc": "Coleslaw, frites, ketchup"
+        }
+      ]
+    },
+    {
+      "name": "Soupe",
+      "items": [
+        {
+          "id": "chicken-corn-soupe",
+          "name": "Chicken Corn Soupe",
+          "price": "4 000 FCFA",
+          "desc": "Poulet, maïs, œuf"
+        },
+        {
+          "id": "vegetable-soupe",
+          "name": "Vegetable Soupe",
+          "price": "3 000 FCFA",
+          "desc": "Légumes mélangés"
+        },
+        {
+          "id": "hot-sour-seafood-soupe",
+          "name": "Hot & Sour Seafood Soupe",
+          "price": "5 000 FCFA",
+          "desc": "Fruits de mer, pousses de bambou, champignons noirs, œufs (SPICY)"
+        },
+        {
+          "id": "hot-sour-chicken-soupe",
+          "name": "Hot & Sour Chicken Soupe",
+          "price": "4 000 FCFA",
+          "desc": "Poulet, pousses de bambou, champignons noirs, œufs (SPICY)"
+        },
+        {
+          "id": "shrimp-soupe",
+          "name": "Shrimp Soupe",
+          "price": "5 000 FCFA",
+          "desc": "Crevettes, pousses de bambou, gingembre, champignons blancs"
+        },
+        {
+          "id": "beef-noodles-soupe",
+          "name": "Beef Noodles Soupe",
+          "price": "4 000 FCFA",
+          "desc": "Bœuf, nouilles, chou, oignon"
+        },
+        {
+          "id": "chicken-noodles-soupe",
+          "name": "Chicken Noodles Soupe",
+          "price": "4 000 FCFA",
+          "desc": "Crabe, nouilles, choux, concombre, carottes"
+        },
+        {
+          "id": "spicy-seafood-soupe",
+          "name": "Spicy Seafood Soupe",
+          "price": "5 000 FCFA",
+          "desc": "Fruit de mère, pousse de bambou, champignon, gingembre (SPICY)"
+        }
+      ]
+    },
+    {
+      "name": "Riz",
+      "items": [
+        {
+          "id": "steamed-rice",
+          "name": "Steamed Rice",
+          "price": "2 000 FCFA",
+          "desc": "Riz nature"
+        },
+        {
+          "id": "garlic-rice",
+          "name": "Garlic Rice",
+          "price": "2 000 FCFA",
+          "desc": "Riz à l'ail"
+        },
+        {
+          "id": "egg-fried-rice",
+          "name": "Egg Fried Rice",
+          "price": "2 000 FCFA",
+          "desc": "Riz aux oeufs"
+        },
+        {
+          "id": "vegetable-fried-rice",
+          "name": "Vegetable Fried Rice",
+          "price": "3 000 FCFA",
+          "desc": "Chou, maïs, carotte, oignon, œufs"
+        },
+        {
+          "id": "chicken-fried-rice",
+          "name": "Chicken Fried Rice",
+          "price": "4 500 FCFA",
+          "desc": "Poulet, chou, oignon, œufs"
+        },
+        {
+          "id": "beef-fried-rice",
+          "name": "Beef Fried Rice",
+          "price": "4 500 FCFA",
+          "desc": "Boeuf, chou, oignon, œufs (SPICY)"
+        },
+        {
+          "id": "shrimp-fried-rice",
+          "name": "Shrimp Fried Rice",
+          "price": "7 000 FCFA",
+          "desc": "Crevettes, chou, oignon, œufs"
+        },
+        {
+          "id": "fooken-rice",
+          "name": "Fooken Rice",
+          "price": "7 000 FCFA",
+          "desc": "Crevette, poulet, champignons noir, oignon, carrot, oeufs"
+        }
+      ]
+    },
+    {
+      "name": "Nouilles",
+      "items": [
+        {
+          "id": "vegetable-noodles",
+          "name": "Vegetable Noodles",
+          "price": "4 000 FCFA",
+          "desc": "Chou, oignon, carotte, champignons"
+        },
+        {
+          "id": "fresh-chicken-noodles",
+          "name": "Fresh Chicken  Noodles",
+          "price": "5 000 FCFA",
+          "desc": "Poulet, chou"
+        },
+        {
+          "id": "fresh-beef-noodles",
+          "name": "Fresh Beef Noodles",
+          "price": "5 000 FCFA",
+          "desc": "Boeuf, chou"
+        },
+        {
+          "id": "shrimp-noodles",
+          "name": "Shrimp Noodles",
+          "price": "8 000 FCFA",
+          "desc": "Crevettes, chou, oignon, carotte, champignons"
+        },
+        {
+          "id": "brased-noodles-with-black-mushroom",
+          "name": "Brased Noodles With Black Mushroom",
+          "price": "5 000 FCFA",
+          "desc": "Champignon noir, champignon blanc, carotte, oignon"
+        },
+        {
+          "id": "chicken-beef-noodles",
+          "name": "Chicken & Beef Noodles",
+          "price": "5 000 FCFA",
+          "desc": "Poulet, boeuf, chou, carotte, oignon"
+        }
+      ]
+    },
+    {
+      "name": "Poulet",
+      "items": [
+        {
+          "id": "chicken-with-cashew-nuts",
+          "name": "Chicken With Cashew Nuts",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, noix de cajou, poivron vert, carottes, oignons, gingembre, ail"
+        },
+        {
+          "id": "sweet-sour-chicken",
+          "name": "Sweet & Sour Chicken",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, ananas, poivron vert, oignons"
+        },
+        {
+          "id": "chicken-with-mushroom-bamboo-shoots",
+          "name": "Chicken With Mushroom & Bamboo Shoots",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, champignons, pousses de bambou, carottes, oignons, ail"
+        },
+        {
+          "id": "chicken-with-mixed-vegetables",
+          "name": "Chicken With Mixed Vegetables",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, mélange de légumes, ail"
+        },
+        {
+          "id": "yellow-curry-chicken",
+          "name": "Yellow Curry Chicken",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, carottes, poivron vert, pommes de terre, oignons"
+        },
+        {
+          "id": "red-curry-chicken-in-hot-pot",
+          "name": "Red Curry Chicken In Hot Pot",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, carottes, poivron vert, pommes de terre, oignons (SPICY)"
+        },
+        {
+          "id": "sesame-chicken",
+          "name": "Sesame Chicken",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, poivron vert, brocolis, oignon, sésame"
+        },
+        {
+          "id": "chicken-oyster-sauce",
+          "name": "Chicken Oyster Sauce",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, champignons, carottes, gingembre, oignons, ail, sauce d'huitre"
+        },
+        {
+          "id": "szechuan-chicken",
+          "name": "Szechuan Chicken",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, oignons, piment, ail (SPICY)"
+        }
+      ]
+    },
+    {
+      "name": "Combo",
+      "items": [
+        {
+          "id": "chicken-combo",
+          "name": "Chicken Combo",
+          "price": "8 000 FCFA",
+          "desc": "Poulet aux choix, nouille ou riz au choix"
+        },
+        {
+          "id": "beef-combo",
+          "name": "Beef Combo",
+          "price": "8 500 FCFA",
+          "desc": "Boeuf aux choix, nouille ou riz au choix"
+        },
+        {
+          "id": "fish-combo",
+          "name": "Fish Combo",
+          "price": "9 500 FCFA",
+          "desc": "Poisson aux choix, nouille ou riz au choix"
+        },
+        {
+          "id": "shrimp-combo",
+          "name": "Shrimp Combo",
+          "price": "10 500 FCFA",
+          "desc": "Crevette aux choix, nouille ou riz au choix"
+        }
+      ]
+    },
+    {
+      "name": "Bœuf",
+      "items": [
+        {
+          "id": "beef-oyster",
+          "name": "Beef Oyster",
+          "price": "7 500 FCFA",
+          "desc": "Beef With Cashew Nuts"
+        },
+        {
+          "id": "beef-with-cashew-nuts",
+          "name": "Beef With Cashew Nuts",
+          "price": "7 500 FCFA",
+          "desc": "Bœuf, noix de cajou, poivron vert, carottes, oignons, gingembre, ail"
+        },
+        {
+          "id": "szechuan-beef",
+          "name": "Szechuan Beef",
+          "price": "7 500 FCFA",
+          "desc": "Boeuf, oignons, piment, ail (SPICY)"
+        },
+        {
+          "id": "beef-with-mushroom-bamboo-shoots",
+          "name": "Beef With Mushroom & Bamboo Shoots",
+          "price": "7 500 FCFA",
+          "desc": "Boeuf, champignons, pousses de bambou, carottes, oignons, ail"
+        },
+        {
+          "id": "beef-with-mixed-vegetables",
+          "name": "Beef With Mixed Vegetables",
+          "price": "7 500 FCFA",
+          "desc": "Boeuf, mélange de légumes, ail"
+        },
+        {
+          "id": "yellow-curry-beef",
+          "name": "Yellow Curry Beef",
+          "price": "7 500 FCFA",
+          "desc": "Boeuf, carotte, poivron vert, pommes de terre, oignons"
+        },
+        {
+          "id": "red-curry-beef-in-hot-pot",
+          "name": "Red Curry Beef In Hot Pot",
+          "price": "7 500 FCFA",
+          "desc": "Boeuf, carotte, poivron vert, pommes de terre, oignons (SPICY)"
+        },
+        {
+          "id": "beef-tenderloin-in-cantonese-sauce",
+          "name": "Beef Tenderloin In Cantonese Sauce",
+          "price": "7 500 FCFA",
+          "desc": "Bœuf, oignons"
+        },
+        {
+          "id": "jing-do-crispy-beef",
+          "name": "Jing Do Crispy Beef",
+          "price": "7 500 FCFA",
+          "desc": "Bœuf, carottes, piment séché"
+        },
+        {
+          "id": "beef-brocoli",
+          "name": "Beef Brocoli",
+          "price": "7 500 FCFA",
+          "desc": "Boeuf, champignons, carottes, brocolis"
+        },
+        {
+          "id": "mongolian-beef",
+          "name": "Mongolian Beef",
+          "price": "7 500 FCFA",
+          "desc": "Bœuf, haricots vert"
+        }
+      ]
+    },
+    {
+      "name": "Poisson",
+      "items": [
+        {
+          "id": "sauted-fish-fillet",
+          "name": "Sauted Fish Fillet",
+          "price": "9 500 FCFA",
+          "desc": "Filet de poisson sauté, champignons, carottes, ail, gingembre, oignons"
+        },
+        {
+          "id": "red-curry-fish",
+          "name": "Red Curry Fish",
+          "price": "9 500 FCFA",
+          "desc": "Fillet de poisson, carottes, poivron vert, pommes de terre, oignons (SPICY)"
+        },
+        {
+          "id": "sweet-sour-fish-fillet",
+          "name": "Sweet & Sour Fish Fillet",
+          "price": "9 500 FCFA",
+          "desc": "Filet de poisson, ananas, poivron vert, oignons"
+        },
+        {
+          "id": "steamed-fish-fillet",
+          "name": "Steamed Fish Fillet",
+          "price": "9 500 FCFA",
+          "desc": "Filet de poisson à la vapeur, gingembre, oignons"
+        },
+        {
+          "id": "citrus-salmon-cubes",
+          "name": "Citrus Salmon Cubes",
+          "price": "10 500 FCFA",
+          "desc": "Saumon, citron, beurre"
+        }
+      ]
+    },
+    {
+      "name": "Crevettes",
+      "items": [
+        {
+          "id": "steamed-shrimps-garlic-or-soya",
+          "name": "Steamed Shrimps (Garlic Or Soya)",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes à la vapeur (sauce garlic ou soja)"
+        },
+        {
+          "id": "oyster-shrimps",
+          "name": "Oyster Shrimps",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, champignons, carottes, gingembre, oignons, ail"
+        },
+        {
+          "id": "shrimps-with-cashew-nuts",
+          "name": "Shrimps With Cashew Nuts",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, noix de cajou, poivron vert, carottes, oignons, gingembre, ail"
+        },
+        {
+          "id": "shrimps-with-mushroom-bamboo-shoots",
+          "name": "Shrimps With Mushroom & Bamboo Shoots",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, champignons, pousses de bambou, carottes, oignons, ail"
+        },
+        {
+          "id": "szechuan-shrimps",
+          "name": "Szechuan Shrimps",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, oignons, piment, ail (SPICY)"
+        },
+        {
+          "id": "shrimps-with-mixed-vegetebales",
+          "name": "Shrimps With Mixed Vegetebales",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, mélange de légumes, ail"
+        },
+        {
+          "id": "yellow-curry-shrimps",
+          "name": "Yellow Curry Shrimps",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, carottes, poivron vert, pommes de terre, oignons"
+        },
+        {
+          "id": "red-curry-shrimps-in-hot-pot",
+          "name": "Red Curry Shrimps In Hot Pot",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, carottes, poivron vert, pommes de terre, oignons (SPICY)"
+        },
+        {
+          "id": "shrimp-ginger-and-onion",
+          "name": "Shrimp Ginger And  Onion",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, gingembre, oignons et ail"
+        },
+        {
+          "id": "sweet-sour-shrimps",
+          "name": "Sweet & Sour Shrimps",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, ananas, poivron vert, oignons"
+        }
+      ]
+    },
+    {
+      "name": "Plats végétariens",
+      "items": [
+        {
+          "id": "black-mushroom-with-bamboo-shoots",
+          "name": "Black Mushroom With Bamboo Shoots",
+          "price": "7 000 FCFA",
+          "desc": "Champignons noirs et pousses de bambou"
+        },
+        {
+          "id": "steamed-vegetables-with-soya-sauce",
+          "name": "Steamed Vegetables With Soya Sauce",
+          "price": "7 000 FCFA",
+          "desc": "Mélange de légumes cuits à la vapeur avec sauce soja"
+        },
+        {
+          "id": "brocoli-blaze",
+          "name": "Brocoli Blaze",
+          "price": "7 000 FCFA",
+          "desc": "Brocoli, oignon vert, piment, ail"
+        },
+        {
+          "id": "chop-suey",
+          "name": "Chop-Suey",
+          "price": "7 000 FCFA",
+          "desc": "Mélange de légumes, ail"
+        }
+      ]
+    },
+    {
+      "name": "Plats sizzling",
+      "items": [
+        {
+          "id": "sizzling-vegetables-with-black-mushroom",
+          "name": "Sizzling Vegetables With Black Mushroom",
+          "price": "7 000 FCFA",
+          "desc": "Brocolis, maïs, champignons noirs, champignons blancs, ail"
+        },
+        {
+          "id": "sizzling-chicken",
+          "name": "Sizzling Chicken",
+          "price": "7 000 FCFA",
+          "desc": "Poulet, oignons, carottes, champignons, pousses de bambou, piment séché"
+        },
+        {
+          "id": "sizzling-beef-with-black-pepper-sauce",
+          "name": "Sizzling Beef With Black Pepper Sauce",
+          "price": "7 500 FCFA",
+          "desc": "Bœuf, gingembre, oignons, piment, ail"
+        },
+        {
+          "id": "sizzling-shrimps",
+          "name": "Sizzling Shrimps",
+          "price": "10 500 FCFA",
+          "desc": "Crevettes, gingembre, oignons, piment, ail"
+        },
+        {
+          "id": "sizzling-seafood",
+          "name": "Sizzling Seafood",
+          "price": "10 500 FCFA",
+          "desc": "Fruits de mer, gingembre, oignons, piment, ail"
+        }
+      ]
+    },
+    {
+      "name": "Petit déjeuner",
+      "items": [
+        {
+          "id": "saj-zaatar",
+          "name": "Saj Zaatar",
+          "price": "2 000 FCFA",
+          "desc": "Galette libanaise au thym accompagnée de crudités"
+        },
+        {
+          "id": "omelette-veg-and-cheese",
+          "name": "Omelette Veg And Cheese",
+          "price": "4 000 FCFA",
+          "desc": "Choisissez 4 legumes que vous aimez avec du fromage"
+        },
+        {
+          "id": "omelette-veg",
+          "name": "Omelette Veg",
+          "price": "3 000 FCFA",
+          "desc": "Choisissez 4 legumes que vous aimez"
+        },
+        {
+          "id": "saj-cheese",
+          "name": "Saj Cheese",
+          "price": "4 000 FCFA",
+          "desc": "Galette libanaise au fromage accompagnée de crudités"
+        },
+        {
+          "id": "saj-tomato-and-onion",
+          "name": "Saj Tomato And Onion",
+          "price": "2 000 FCFA",
+          "desc": "Galettes libanaises à la tomate et aux oignons accompagnées de crudités"
+        },
+        {
+          "id": "saj-zaatar-and-cheese",
+          "name": "Saj Zaatar And Cheese",
+          "price": "3 000 FCFA",
+          "desc": "Galette libanaise au thym et au fromage accompagnées de crudités"
+        },
+        {
+          "id": "saj-turkey-and-cheese",
+          "name": "Saj Turkey And Cheese",
+          "price": "4 000 FCFA",
+          "desc": "Galette libanaise à la dinde et fromage accompagnée de crudités"
+        },
+        {
+          "id": "turkey-club-sandwich",
+          "name": "Turkey Club Sandwich",
+          "price": "4 000 FCFA",
+          "desc": "Dinde, fromage, salade, tomate, cornichons"
+        },
+        {
+          "id": "msabaha",
+          "name": "Msabaha",
+          "price": "4 000 FCFA",
+          "desc": "Hoummous, crème de sésame (tahine) accompagné de pain et crudités"
+        },
+        {
+          "id": "sandwich-labneh",
+          "name": "Sandwich Labneh",
+          "price": "2 000 FCFA",
+          "desc": "Pain Libanais, Labneh, menthe, olives, tomate, concombres"
+        },
+        {
+          "id": "mortadella-chicken-or-beef-toastie",
+          "name": "Mortadella Chicken Or Beef Toastie",
+          "price": "3 000 FCFA",
+          "desc": "Pain de mie, mortadelle (poulet ou bœuf), salade, mayonnaise, tomate, cornichon, olives"
+        },
+        {
+          "id": "club-sandwich-complet",
+          "name": "Club Sandwich Complet",
+          "price": "4 000 FCFA",
+          "desc": "Pain de mie, œuf, dinde, salade, fromage"
+        },
+        {
+          "id": "pesto-sandwich",
+          "name": "Pesto Sandwich",
+          "price": "4 000 FCFA",
+          "desc": "Mozzarella, tomate, pesto"
+        },
+        {
+          "id": "labneh",
+          "name": "Labneh",
+          "price": "4 000 FCFA",
+          "desc": "Fromage libanais accompagné de pain et de crudités"
+        },
+        {
+          "id": "halloumi-grille",
+          "name": "Halloumi Grillé",
+          "price": "5 000 FCFA",
+          "desc": "Fromage libanais accompagné de pain et de crudités"
+        },
+        {
+          "id": "foul",
+          "name": "Foul",
+          "price": "4 000 FCFA",
+          "desc": "Préparation libanaise à base de fèves accompagnée de pain et de crudités"
+        },
+        {
+          "id": "halloumi-toastie",
+          "name": "Halloumi Toastie",
+          "price": "4 000 FCFA",
+          "desc": "Pain de mie, fromage Halloumi, salade, tomate, menthe"
+        },
+        {
+          "id": "fate",
+          "name": "Fate",
+          "price": "5 000 FCFA",
+          "desc": "Préparation de pois chiche et de yaourt accompagné de pain et crudités"
+        },
+        {
+          "id": "croissant",
+          "name": "Croissant",
+          "price": "1 000 FCFA",
+          "desc": "Au choix : beurre, fromage, chocolat"
+        },
+        {
+          "id": "pain-au-chocolat",
+          "name": "Pain Au Chocolat",
+          "price": "1 000 FCFA",
+          "desc": "Yaourt"
+        },
+        {
+          "id": "yaourt",
+          "name": "Yaourt",
+          "price": "1 000 FCFA",
+          "desc": "We appreciate your comments"
+        },
+        {
+          "id": "subtotal",
+          "name": "Subtotal",
+          "price": "0 FCFA",
+          "desc": "PK0 a côté de l'ambassade des Etats Unis"
+        }
+      ]
+    }
+  ]
+}

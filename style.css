@@ -2155,3 +2155,24 @@ body.modal-open {
     text-align: center;
   }
 }
+
+/* ---------- carte : états ---------- */
+
+.menu-empty {
+  grid-column: 1 / -1;
+  padding: 28px 0;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu-line-name {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .menu-tabs {
+    justify-content: flex-start;
+    gap: 6px 16px;
+  }
+}
