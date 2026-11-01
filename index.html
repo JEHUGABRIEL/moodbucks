@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moodbucks – Restaurant &amp; Bar · Bangui</title>
+  <meta name="description" content="Moodbucks, restaurant et bar à Bangui : cuisine locale et internationale, grillades au feu de bois, cocktails maison et musique live tous les soirs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#menu">Aller au menu</a>
+
+  <!-- ============================================================================
+       EN-TÊTE
+       ========================================================================== -->
+  <header class="site-header is-overlay" id="siteHeader">
+    <div class="container header-row">
+      <a class="logo" href="#" aria-label="Moodbucks">
+        <span class="logo-mark" aria-hidden="true">M</span>
+        <span class="logo-text">Moodbucks</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#maison">La maison</a>
+        <a href="#menu">Menu</a>
+        <a href="#evenements">Événements</a>
+        <a href="#noustrouver">Nous trouver</a>
+      </nav>
+
+      <div class="header-utils">
+        <a class="icon-btn" href="https://wa.me/23675000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.5L3.5 20.5l1.4-4.5a8.4 8.4 0 1 1 15.6-4.4Z" />
+            <path d="M8.8 8.4c.3-.6.6-.6.9-.6h.6c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.6l-.5.6c-.1.2-.3.3-.1.6a6 6 0 0 0 2.8 2.4c.3.1.5.1.7-.1l.6-.7c.2-.2.3-.2.5-.1l1.8.9c.3.1.5.2.5.4a2 2 0 0 1-1.4 1.9c-.6.2-1.3.2-2.2-.1a11.4 11.4 0 0 1-5.6-4.9 3 3 0 0 1-.4-1.9c0-.5.2-.9.5-1.4Z" />
+          </svg>
+        </a>
+        <a class="nav-reserve" href="https://wa.me/23675000000?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">Réserver</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Navigation mobile">
+      <a href="#maison">La maison</a>
+      <a href="#menu">Menu</a>
+      <a href="#evenements">Événements</a>
+      <a href="#noustrouver">Nous trouver</a>
+      <a class="mobile-menu__reserve" href="https://wa.me/23675000000?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">Réserver une table</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ==========================================================================
+         HERO
+         ======================================================================== -->
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-slide is-active">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=2000&q=80" alt="" />
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=2000&q=80" alt="" />
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=2000&q=80" alt="" />
+        </div>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-inner container">
+        <span class="caps caps-light hero-eyebrow">Restaurant &amp; bar · Bangui</span>
+        <h1 class="hero-title">
+          <span>Moodbucks,</span>
+          <span>l’âme de Bangui</span>
+        </h1>
+        <span class="ornament hero-ornament" aria-hidden="true"></span>
+        <p class="hero-lead">Cuisine locale &amp; internationale, grillades au feu de bois, cocktails maison et musique live tous les soirs.</p>
+      </div>
+
+      <div class="hero-dots" id="heroDots" aria-label="Changer de photo"></div>
+      <div class="hero-notch" aria-hidden="true"></div>
+      <a class="hero-scroll" href="#maison" aria-label="Découvrir la maison">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         LA MAISON
+         ======================================================================== -->
+    <section class="section story" id="maison">
+      <div class="container story-grid">
+        <div class="center-copy">
+          <span class="script">Notre</span>
+          <span class="caps">Maison</span>
+          <span class="ornament" aria-hidden="true"></span>
+          <p>
+            À deux pas du centre de Bangui, Moodbucks réunit une salle, une terrasse et un bar.
+            On y vient pour un déjeuner d’affaires, un dîner en famille ou un cocktail
+            au son des musiciens de la maison.
+          </p>
+          <a class="gold-link" href="#evenements">
+            Les soirées de la maison
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M7 17 17 7M9 7h8v8" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="story-carousel">
+          <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Photos précédentes">
+            <svg width="16" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <path d="M15 5 8 12l7 7" />
+            </svg>
+          </button>
+          <div class="carousel-frame">
+            <figure class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=900&q=80" alt="Poulet braisé servi à Moodbucks" />
+            </figure>
+            <figure class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4b5?w=900&q=80" alt="Le bar de Moodbucks le soir" />
+            </figure>
+          </div>
+          <button class="carousel-arrow" type="button" data-carousel-next aria-label="Photos suivantes">
+            <svg width="16" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TRIPTYQUE
+         ======================================================================== -->
+    <section class="triptych" aria-label="Les repas de la maison">
+      <div class="triptych-panel">
+        <span class="panel-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+            <path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M16 3c-1.4 1.6-2 3.4-2 5.5 0 2 .6 3 2 3v10M16 3v8.5" />
+          </svg>
+        </span>
+        <h2 class="script script-light">
+          Déjeuners<br />&amp; dîners
+        </h2>
+        <span class="ornament ornament-dark" aria-hidden="true"></span>
+        <p class="triptych-time">
+          Tous les jours<br />8h00 – minuit
+        </p>
+      </div>
+      <figure class="triptych-photo">
+        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&q=80" alt="Brochettes grillées à la braise" />
+      </figure>
+      <figure class="triptych-photo">
+        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=900&q=80" alt="Poisson grillé et légumes" />
+      </figure>
+    </section>
+
+    <!-- ==========================================================================
+         MENU
+         ======================================================================== -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="center-copy">
+          <span class="script">Notre</span>
+          <span class="caps">Menu</span>
+          <span class="ornament" aria-hidden="true"></span>
+          <p>
+            La carte suit le marché : grillades à la braise, poissons du fleuve,
+            petits déjeuners généreux, plats internationaux et cocktails préparés au bar.
+          </p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Catégories du menu">
+          <button class="tab-btn" type="button" onclick="switchTab('grillades', this)">Grillades</button>
+          <button class="tab-btn" type="button" onclick="switchTab('poissons', this)">Poissons</button>
+          <button class="tab-btn" type="button" onclick="switchTab('petitdej', this)">Petit déjeuner</button>
+          <button class="tab-btn" type="button" onclick="switchTab('international', this)">International</button>
+          <button class="tab-btn" type="button" onclick="switchTab('cocktails', this)">Cocktails</button>
+          <button class="tab-btn" type="button" onclick="switchTab('boissons', this)">Boissons</button>
+          <button class="tab-btn" type="button" onclick="switchTab('accomp', this)">Accompagnements</button>
+        </div>
+
+        <div class="menu-panels">
+
+          <!-- GRILLADES -->
+          <div id="tab-grillades" class="menu-panel">
+            <button class="menu-line" type="button" onclick="openPlat('poulet-braise')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Poulet Braisé</span>
+                <span class="menu-tag">Spécialité</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 500 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Poulet fermier mariné aux épices locales et grillé lentement sur braise.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('brochettes')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Brochettes de Bœuf</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 200 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Bœuf tendre mariné, grillé sur brochette, sauce piment maison.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('poulet-dg')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Poulet DG</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 800 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Poulet mijoté en sauce tomate avec banane plantain.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('yabanda')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Yabanda</span>
+                <span class="menu-tag">Centrafrique</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 200 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Recette traditionnelle maison, viande locale et feuilles de manioc.</span>
+            </button>
+          </div>
+
+          <!-- POISSONS -->
+          <div id="tab-poissons" class="menu-panel">
+            <button class="menu-line" type="button" onclick="openPlat('capitaine')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Capitaine Grillé</span>
+                <span class="menu-tag">Oubangui</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">2 000 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Le poisson roi du fleuve, grillé entier, épices locales et citron.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('tilapia')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Tilapia Grillé</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 500 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Tilapia frais grillé entier à la braise, herbes et épices locales.</span>
+            </button>
+          </div>
+
+          <!-- PETIT DÉJEUNER -->
+          <div id="tab-petitdej" class="menu-panel">
+            <button class="menu-line" type="button" onclick="openPlat('petit-dej')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Petit Déjeuner Complet</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 000 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Pain frais, œufs au choix, café ou thé et jus de fruits pressé.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('omelette')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Omelette aux Légumes</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">800 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Omelette moelleuse garnie de légumes frais du marché.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('salade')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Salade César</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 500 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Romaine croquante, croûtons dorés, parmesan et sauce maison.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('soupe')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Soupe du Jour</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">800 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Préparée avec les légumes frais du marché, selon l’arrivage.</span>
+            </button>
+          </div>
+
+          <!-- INTERNATIONAL -->
+          <div id="tab-international" class="menu-panel">
+            <button class="menu-line" type="button" onclick="openPlat('burger')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Burger Moodbucks</span>
+                <span class="menu-tag">Signature</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">2 500 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Viande fraîche locale, pain brioche et sauce Moodbucks maison.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('pizza')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Pizza Margherita</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">3 000 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Pâte maison, tomate fraîche, mozzarella fondue et basilic.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('pasta')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Pâtes Bolognaise</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">2 200 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Pâtes al dente et sauce bolognaise mijotée à la viande locale.</span>
+            </button>
+          </div>
+
+          <!-- COCKTAILS -->
+          <div id="tab-cocktails" class="menu-panel">
+            <button class="menu-line" type="button" onclick="openPlat('cocktail-signature')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Moodbucks Signature</span>
+                <span class="menu-tag">Signature</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 500 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Le cocktail de la maison, fruits tropicaux frais et sirop maison.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('mojito')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Mojito Tropical</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 200 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Rhum, menthe fraîche, citron vert et une touche d’ananas.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('bissap-cocktail')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Bissap Sunrise</span>
+                <span class="menu-tag">Local</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">1 300 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Infusion de bissap, gin, citron frais et miel local.</span>
+            </button>
+          </div>
+
+          <!-- BOISSONS -->
+          <div id="tab-boissons" class="menu-panel">
+            <button class="menu-line" type="button" onclick="openPlat('biere')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Bière Fraîche</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">600 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Mocaf, Castel ou Heineken, servie bien fraîche.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('jus')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Jus Frais Maison</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">500 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Pressé à la commande : mangue, bissap, goyave ou ananas.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('cafe')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Café &amp; Thé</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">400 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Expresso, café allongé ou thé, servi avec du sucre de canne.</span>
+            </button>
+          </div>
+
+          <!-- ACCOMPAGNEMENTS -->
+          <div id="tab-accomp" class="menu-panel">
+            <button class="menu-line" type="button" onclick="openPlat('frites')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Frites Maison</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">400 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Pommes de terre fraîches, coupées et frites maison.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('plantain')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Banane Plantain</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">300 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Grillée ou frite, caramélisée et fondante.</span>
+            </button>
+
+            <button class="menu-line" type="button" onclick="openPlat('riz')">
+              <span class="menu-line-head">
+                <span class="menu-line-name">Riz Blanc</span>
+                <span class="menu-line-dots"></span>
+                <span class="menu-line-price">300 <small>FCFA</small></span>
+              </span>
+              <span class="menu-line-desc">Riz blanc cuit à la perfection.</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="dark-panel">
+          <div>
+            <span class="script">À emporter</span>
+            <span class="caps">Commande WhatsApp</span>
+            <p>Toute la carte est disponible à emporter. Écrivez-nous, nous préparons votre commande pour l’heure souhaitée.</p>
+          </div>
+          <a class="btn btn-gold" href="https://wa.me/23675000000?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20passer%20une%20commande" target="_blank" rel="noopener noreferrer">Commander</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BANDE QUALITÉ
+         ======================================================================== -->
+    <section class="quality-band">
+      <div class="quality-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=2000&q=80" alt="" />
+      </div>
+      <div class="quality-shade" aria-hidden="true"></div>
+      <h2 class="quality-title">
+        Nous veillons<br />à la qualité de nos plats !
+      </h2>
+      <span class="seal" aria-hidden="true">M</span>
+    </section>
+
+    <!-- ==========================================================================
+         ÉVÉNEMENTS
+         ======================================================================== -->
+    <section class="section events-section" id="evenements">
+      <div class="container">
+        <div class="center-copy">
+          <span class="script">Les</span>
+          <span class="caps">Événements</span>
+          <span class="ornament" aria-hidden="true"></span>
+          <p>
+            Chaque soir a sa couleur : musique live, scène ouverte, DJ, brunch du dimanche
+            et grands matchs sur écran géant.
+          </p>
+        </div>
+
+        <div class="events-grid">
+          <article class="event-card" role="button" tabindex="0" onclick="openEvent('live-jeudi')" onkeydown="if(event.key==='Enter')openEvent('live-jeudi')">
+            <figure class="event-card-media">
+              <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=80" alt="Musiciens sur scène" />
+            </figure>
+            <div class="event-card-body">
+              <span class="event-date">Chaque jeudi <i>•</i> 21h</span>
+              <h3>Soirée Live Music</h3>
+              <p>Nos musiciens jouent en direct. Ambiance festive garantie pour votre soirée.</p>
+              <span class="gold-link">Découvrir
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="event-card" role="button" tabindex="0" onclick="openEvent('open-mic-vendredi')" onkeydown="if(event.key==='Enter')openEvent('open-mic-vendredi')">
+            <figure class="event-card-media">
+              <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=700&q=80" alt="Micro sur scène" />
+            </figure>
+            <div class="event-card-body">
+              <span class="event-date">Chaque vendredi <i>•</i> 20h</span>
+              <h3>Open Mic Night</h3>
+              <p>À vous de briller : chanteurs, poètes et humoristes sur la scène de la maison.</p>
+              <span class="gold-link">Découvrir
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="event-card" role="button" tabindex="0" onclick="openEvent('dj-samedi')" onkeydown="if(event.key==='Enter')openEvent('dj-samedi')">
+            <figure class="event-card-media">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=700&q=80" alt="Soirée DJ" />
+            </figure>
+            <div class="event-card-body">
+              <span class="event-date">Chaque samedi <i>•</i> 22h</span>
+              <h3>DJ Night – Boom Boom Saturdays</h3>
+              <p>Nos DJ résident enchaînent les hits remixés jusqu’à l’aube.</p>
+              <span class="gold-link">Découvrir
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="event-card" role="button" tabindex="0" onclick="openEvent('brunch-dimanche')" onkeydown="if(event.key==='Enter')openEvent('brunch-dimanche')">
+            <figure class="event-card-media">
+              <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=700&q=80" alt="Table de brunch" />
+            </figure>
+            <div class="event-card-body">
+              <span class="event-date">Chaque dimanche <i>•</i> 10h</span>
+              <h3>Brunch Festif</h3>
+              <p>Buffet local, jus frais et musique d’ambiance pour commencer le dimanche.</p>
+              <span class="gold-link">Découvrir
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="event-card" role="button" tabindex="0" onclick="openEvent('ladies-night')" onkeydown="if(event.key==='Enter')openEvent('ladies-night')">
+            <figure class="event-card-media">
+              <img src="https://images.unsplash.com/photo-1549887534-f64a3b6f6e3e?w=700&q=80" alt="Cocktails et soirée" />
+            </figure>
+            <div class="event-card-body">
+              <span class="event-date">1er mercredi du mois <i>•</i> 19h</span>
+              <h3>Ladies Night</h3>
+              <p>Cocktails à moitié prix pour les dames jusqu’à 22h, DJ et animations.</p>
+              <span class="gold-link">Découvrir
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="event-card" role="button" tabindex="0" onclick="openEvent('match-foot')" onkeydown="if(event.key==='Enter')openEvent('match-foot')">
+            <figure class="event-card-media">
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=700&q=80" alt="Match de football" />
+            </figure>
+            <div class="event-card-body">
+              <span class="event-date">Jours de match <i>•</i> En direct</span>
+              <h3>Match Foot Live</h3>
+              <p>Tous les grands matchs sur écran géant, ambiance de stade garantie.</p>
+              <span class="gold-link">Découvrir
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CARTE / CONTACT
+         ======================================================================== -->
+    <section class="map-section" id="noustrouver">
+      <iframe class="map-frame" title="Carte de Bangui" loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989!2d18.5582!3d4.3612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMjEnNDAuMyJOIDE4wrAzMycyOS41IkU!5e0!3m2!1sfr!2sfr!4v1000000000000"
+        allowfullscreen></iframe>
+
+      <div class="container map-overlay">
+        <div class="contact-card">
+          <span class="script script-light">Contact</span>
+          <span class="caps caps-light">Notre restaurant</span>
+          <span class="ornament ornament-dark" aria-hidden="true"></span>
+
+          <a class="contact-line" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>1er Arrondissement<br />Bangui, République Centrafricaine</span>
+          </a>
+          <a class="contact-line" href="tel:+23675000000">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M6.5 3h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5L16 12l4 1.5v3c0 1.4-1.1 2.5-2.5 2.5A14.5 14.5 0 0 1 3 5.5C3 4.1 4.1 3 5.5 3Z" />
+            </svg>
+            <span>+236 75 00 00 00</span>
+          </a>
+          <div class="contact-line">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.5 2" />
+            </svg>
+            <span>Ouvert tous les jours<br />8h00 – minuit</span>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z" />
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="4.5" />
+                <circle cx="12" cy="12" r="3.6" />
+                <circle cx="16.8" cy="7.2" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+            <a href="https://wa.me/23675000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.5L3.5 20.5l1.4-4.5a8.4 8.4 0 1 1 15.6-4.4Z" />
+              </svg>
+            </a>
+          </div>
+
+          <a class="gold-link gold-link-light" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">Voir sur Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="map-cta">
+      <div class="container map-cta-inner">
+        <p>Une table pour ce soir ?</p>
+        <a class="btn btn-gold" href="https://wa.me/23675000000?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">Réserver sur WhatsApp</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ============================================================================
+       PIED DE PAGE
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <span class="footer-logo">
+          <span class="footer-logo__mark" aria-hidden="true">M</span>
+          <span class="footer-logo__name">Moodbucks</span>
+        </span>
+        <p class="footer-tagline">Restaurant &amp; bar à Bangui. Cuisine locale et internationale, cocktails maison et musique live tous les soirs.</p>
+        <div class="footer-socials">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z" />
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="4.5" />
+              <circle cx="12" cy="12" r="3.6" />
+              <circle cx="16.8" cy="7.2" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="https://wa.me/23675000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.5L3.5 20.5l1.4-4.5a8.4 8.4 0 1 1 15.6-4.4Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Explorer">
+        <h2 class="footer-col__title">Explorer</h2>
+        <a href="#maison">La maison</a>
+        <a href="#menu">Le menu</a>
+        <a href="#evenements">Les événements</a>
+        <a href="#noustrouver">Nous trouver</a>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-col__title">Nous trouver</h2>
+        <a class="footer-line" href="https://www.google.com/maps/search/Moodbucks+Bangui" target="_blank" rel="noopener noreferrer">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          <span>1er Arrondissement, Bangui<br />République Centrafricaine</span>
+        </a>
+        <a class="footer-line" href="tel:+23675000000">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M6.5 3h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5L16 12l4 1.5v3c0 1.4-1.1 2.5-2.5 2.5A14.5 14.5 0 0 1 3 5.5C3 4.1 4.1 3 5.5 3Z" />
+          </svg>
+          <span>+236 75 00 00 00</span>
+        </a>
+        <a class="footer-cta" href="https://wa.me/23675000000?text=Bonjour%20Moodbucks%2C%20je%20voudrais%20r%C3%A9server%20une%20table" target="_blank" rel="noopener noreferrer">
+          Réserver une table
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M7 17 17 7M9 7h8v8" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-col__title">Horaires</h2>
+        <p class="footer-hours"><span>Lundi – jeudi</span><span>8h – minuit</span></p>
+        <p class="footer-hours"><span>Vendredi – samedi</span><span>8h – 4h</span></p>
+        <p class="footer-hours"><span>Dimanche</span><span>10h – minuit</span></p>
+        <span class="footer-note">Service continu. Cuisine ouverte jusqu’à 23h.</span>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="container site-footer__bottom-inner">
+        <span>© 2026 Moodbucks · Bangui, République Centrafricaine</span>
+        <span>Restaurant &amp; bar · 1er Arrondissement</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================================
+       MODALES
+       ======================================================================== -->
+
+  <!-- Modal plat -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeOnOverlay(event)">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <div class="modal-imgs">
+        <img id="modalImg" src="" alt="" />
+        <button class="modal-close" type="button" onclick="closeModal()" aria-label="Fermer">✕</button>
+        <div class="modal-img-dots" id="modalDots"></div>
+      </div>
+      <div class="modal-content">
+        <div>
+          <div class="modal-tag" id="modalTag"></div>
+          <div class="modal-name" id="modalName"></div>
+          <div class="modal-price" id="modalPrice"></div>
+          <span class="ornament ornament-left" aria-hidden="true"></span>
+          <div class="modal-desc" id="modalDesc"></div>
+          <div class="modal-ing-title">Ingrédients</div>
+          <div class="modal-ingredients" id="modalIngredients"></div>
+        </div>
+        <div class="modal-actions">
+          <a href="#" id="modalWA" class="btn btn-gold" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
+          <a href="#evenements" class="btn btn-outline-dark" onclick="closeModal()">Voir les événements</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal événement -->
+  <div class="event-modal-overlay" id="eventModalOverlay" onclick="closeEventOnOverlay(event)">
+    <div class="event-modal-box" role="dialog" aria-modal="true" aria-labelledby="eventModalTitle">
+      <div class="event-modal-img" id="eventModalImg"></div>
+      <div class="event-modal-content">
+        <div>
+          <div class="event-modal-date" id="eventModalDate"></div>
+          <div class="event-modal-title" id="eventModalTitle"></div>
+          <span class="ornament ornament-left" aria-hidden="true"></span>
+          <div class="event-modal-desc" id="eventModalDesc"></div>
+          <div class="event-modal-details" id="eventModalDetails"></div>
+        </div>
+        <div class="event-modal-actions">
+          <a href="#" id="eventModalWA" class="btn btn-gold" target="_blank" rel="noopener noreferrer">Réserver sur WhatsApp</a>
+          <a href="#menu" class="btn btn-outline-dark" onclick="closeEventModal()">Voir le menu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modules JS — chargés dans l'ordre de dépendance -->
+  <script src="js/modal.js"></script>
+  <script src="js/eventModal.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/ui.js"></script>
+  <!-- dataLoader doit être chargé en dernier : il orchestre tous les autres -->
+  <script src="js/dataLoader.js"></script>
+</body>
+</html>

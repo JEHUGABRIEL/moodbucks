@@ -1,0 +1,10 @@
+# Sauvegarde locale de l'audit design
+.avant-audit/
+
+# Vercel
+.vercel
+
+# Outils et divers
+.qodo/
+.DS_Store
+Thumbs.db

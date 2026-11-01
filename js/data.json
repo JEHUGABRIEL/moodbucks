@@ -1,0 +1,260 @@
+{
+  "plats": {
+    "poulet-braise": {
+      "tag": "Grillade · Locale",
+      "name": "Poulet Braisé",
+      "price": "1 500 FCFA",
+      "desc": "Poulet fermier mariné aux épices locales centrafricaines, grillé lentement sur braise. Peau croustillante, chair juteuse. Servi avec accompagnement au choix.",
+      "ingredients": ["Poulet fermier", "Épices locales", "Ail", "Gingembre", "Piment", "Citron", "Huile de palme"],
+      "imgs": [
+        "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=700&q=80",
+        "https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80"
+      ]
+    },
+    "capitaine": {
+      "tag": "Poisson · Oubangui",
+      "name": "Capitaine Grillé",
+      "price": "2 000 FCFA",
+      "desc": "Le poisson roi du fleuve Oubangui, grillé entier sur braise. Chair ferme et délicate, relevée d'épices locales et citron frais.",
+      "ingredients": ["Capitaine du fleuve", "Citron", "Piment", "Ail", "Herbes fraîches", "Oignon", "Huile"],
+      "imgs": [
+        "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=700&q=80",
+        "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80"
+      ]
+    },
+    "yabanda": {
+      "tag": "Spécialité Centrafricaine",
+      "name": "Yabanda",
+      "price": "1 200 FCFA",
+      "desc": "Plat traditionnel centrafricain, recette maison authentique. Un voyage au cœur de la cuisine locale de Bangui.",
+      "ingredients": ["Viande locale", "Feuilles de manioc", "Piment", "Ail", "Oignon", "Huile de palme", "Épices locales"],
+      "imgs": ["https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80"]
+    },
+    "brochettes": {
+      "tag": "Grillade",
+      "name": "Brochettes de Bœuf",
+      "price": "1 200 FCFA",
+      "desc": "Morceaux de bœuf tendre marinés aux épices, grillés sur brochette à la braise. Légèrement fumées, servies avec sauce piment maison.",
+      "ingredients": ["Bœuf tendre", "Oignon", "Poivron", "Piment", "Ail", "Épices", "Huile"],
+      "imgs": ["https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=700&q=80"]
+    },
+    "tilapia": {
+      "tag": "Poisson · Grillé",
+      "name": "Tilapia Grillé",
+      "price": "1 500 FCFA",
+      "desc": "Tilapia frais grillé entier à la braise, assaisonné aux herbes et épices locales.",
+      "ingredients": ["Tilapia frais", "Citron", "Herbes", "Ail", "Piment", "Oignon"],
+      "imgs": ["https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80"]
+    },
+    "poulet-dg": {
+      "tag": "Plat Local",
+      "name": "Poulet DG",
+      "price": "1 800 FCFA",
+      "desc": "Poulet mijoté en sauce tomate avec banane plantain. Un grand classique de la cuisine d'Afrique Centrale.",
+      "ingredients": ["Poulet", "Tomate", "Banane plantain", "Oignon", "Ail", "Piment", "Huile"],
+      "imgs": ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"]
+    },
+    "petit-dej": {
+      "tag": "Petit Déjeuner",
+      "name": "Petit Déjeuner Complet",
+      "price": "1 000 FCFA",
+      "desc": "Pain frais, œufs au choix, café ou thé, jus de fruits frais. Le meilleur début de journée à Bangui.",
+      "ingredients": ["Pain frais", "Œufs", "Café ou thé", "Jus de fruits", "Beurre", "Confiture"],
+      "imgs": ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80"]
+    },
+    "omelette": {
+      "tag": "Petit Déjeuner",
+      "name": "Omelette aux Légumes",
+      "price": "800 FCFA",
+      "desc": "Omelette moelleuse garnie de légumes frais du marché. Légère et nourrissante.",
+      "ingredients": ["Œufs", "Tomate", "Oignon", "Poivron", "Herbes", "Huile", "Sel"],
+      "imgs": ["https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80"]
+    },
+    "burger": {
+      "tag": "International",
+      "name": "Burger Moodbucks",
+      "price": "2 500 FCFA",
+      "desc": "Burger maison avec viande fraîche locale, sauce Moodbucks signature, légumes croquants. Notre interprétation centrafricaine du classique américain.",
+      "ingredients": ["Viande fraîche", "Pain brioche", "Sauce maison", "Tomate", "Laitue", "Oignon", "Fromage"],
+      "imgs": ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"]
+    },
+    "pizza": {
+      "tag": "International",
+      "name": "Pizza Margherita",
+      "price": "3 000 FCFA",
+      "desc": "Pâte maison cuite à la perfection, sauce tomate fraîche, mozzarella fondue, basilic.",
+      "ingredients": ["Pâte maison", "Sauce tomate", "Mozzarella", "Basilic", "Huile d'olive"],
+      "imgs": ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80"]
+    },
+    "pasta": {
+      "tag": "International",
+      "name": "Pâtes Bolognaise",
+      "price": "2 200 FCFA",
+      "desc": "Pâtes al dente avec sauce bolognaise mijotée à la viande fraîche locale.",
+      "ingredients": ["Pâtes", "Viande hachée", "Tomate", "Oignon", "Ail", "Herbes", "Parmesan"],
+      "imgs": ["https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80"]
+    },
+    "cocktail-signature": {
+      "tag": "Cocktail · Signature",
+      "name": "Moodbucks Signature",
+      "price": "1 500 FCFA",
+      "desc": "Le cocktail emblématique de la maison, créé par notre barman avec des fruits tropicaux frais de Bangui. Secret bien gardé.",
+      "ingredients": ["Rhum local", "Fruits tropicaux frais", "Sirop maison", "Citron vert", "Glace", "Menthe"],
+      "imgs": ["https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80"]
+    },
+    "mojito": {
+      "tag": "Cocktail",
+      "name": "Mojito Tropical",
+      "price": "1 200 FCFA",
+      "desc": "Notre twist tropical sur le classique cubain : rhum, menthe fraîche, citron vert et une touche d'ananas.",
+      "ingredients": ["Rhum blanc", "Menthe fraîche", "Citron vert", "Ananas", "Sucre de canne", "Eau gazeuse", "Glace"],
+      "imgs": ["https://images.unsplash.com/photo-1555396273-367ea4eb4b5?w=700&q=80"]
+    },
+    "bissap-cocktail": {
+      "tag": "Cocktail · Local",
+      "name": "Bissap Sunrise",
+      "price": "1 300 FCFA",
+      "desc": "Cocktail signature à base de bissap centrafricain, la fleur d'hibiscus locale transformée en expérience cocktail unique.",
+      "ingredients": ["Infusion bissap maison", "Gin", "Citron frais", "Miel local", "Glace"],
+      "imgs": ["https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80"]
+    },
+    "biere": {
+      "tag": "Boisson",
+      "name": "Bière Fraîche",
+      "price": "600 FCFA",
+      "desc": "Mocaf, Castel ou Heineken bien fraîche. La boisson parfaite pour les soirées live de Moodbucks.",
+      "ingredients": ["Mocaf", "Castel", "Heineken"],
+      "imgs": ["https://images.unsplash.com/photo-1555396273-367ea4eb4b5?w=700&q=80"]
+    },
+    "jus": {
+      "tag": "Boisson · Fraîche",
+      "name": "Jus Frais Maison",
+      "price": "500 FCFA",
+      "desc": "Pressé à la commande : mangue, bissap, goyave ou ananas selon les fruits du jour. 100% naturel.",
+      "ingredients": ["Mangue", "Bissap", "Goyave", "Ananas", "Sans sucre ajouté"],
+      "imgs": ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"]
+    },
+    "cafe": {
+      "tag": "Boisson Chaude",
+      "name": "Café & Thé",
+      "price": "400 FCFA",
+      "desc": "Café expresso ou allongé, thé local ou importé. Servi avec du sucre de canne.",
+      "ingredients": ["Café ou thé", "Sucre de canne", "Lait optionnel"],
+      "imgs": ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80"]
+    },
+    "frites": {
+      "tag": "Accompagnement",
+      "name": "Frites Maison",
+      "price": "400 FCFA",
+      "desc": "Pommes de terre fraîches coupées et frites maison. Croustillantes et dorées.",
+      "ingredients": ["Pommes de terre", "Huile", "Sel"],
+      "imgs": ["https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80"]
+    },
+    "plantain": {
+      "tag": "Accompagnement",
+      "name": "Banane Plantain",
+      "price": "300 FCFA",
+      "desc": "Banane plantain grillée ou frite. Caramélisée et fondante.",
+      "ingredients": ["Banane plantain", "Huile", "Sel"],
+      "imgs": ["https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"]
+    },
+    "riz": {
+      "tag": "Accompagnement",
+      "name": "Riz Blanc",
+      "price": "300 FCFA",
+      "desc": "Riz blanc cuit à la perfection.",
+      "ingredients": ["Riz", "Eau", "Sel"],
+      "imgs": ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80"]
+    },
+    "salade": {
+      "tag": "Entrée",
+      "name": "Salade César",
+      "price": "1 500 FCFA",
+      "desc": "Romaine croquante, croûtons dorés, parmesan et sauce César maison.",
+      "ingredients": ["Romaine", "Croûtons", "Parmesan", "Sauce César", "Anchois", "Citron"],
+      "imgs": ["https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80"]
+    },
+    "soupe": {
+      "tag": "Entrée · Soupe",
+      "name": "Soupe du Jour",
+      "price": "800 FCFA",
+      "desc": "Soupe préparée avec les légumes frais du marché selon l'arrivage du jour.",
+      "ingredients": ["Légumes de saison", "Bouillon", "Herbes", "Sel", "Poivre"],
+      "imgs": ["https://images.unsplash.com/photo-1555396273-367ea4eb4b5?w=700&q=80"]
+    }
+  },
+  "events": {
+    "live-jeudi": {
+      "date": "Chaque jeudi • 21h",
+      "title": "Soirée Live Music",
+      "desc": "Plongez dans l'ambiance festive de Moodbucks avec nos musiciens live. Laissez la musique accompagner votre soirée avec des amis, savourez nos cocktails signature et profitez d'une atmosphère unique à Bangui.",
+      "details": {
+        "heure": "21h - 02h",
+        "genre": "Afrobeat · Rumba · Jazz",
+        "tarif": "Gratuit (Consommation min.)",
+        "reservation": "Recommandée"
+      },
+      "img": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&q=80"
+    },
+    "open-mic-vendredi": {
+      "date": "Chaque vendredi • 20h",
+      "title": "Open Mic Night",
+      "desc": "C'est votre moment pour briller ! Open mic pour tous les talents : chanteurs, poètes, humoristes. Rejoignez-nous pour une soirée riche en talents locaux et en convivialité.",
+      "details": {
+        "heure": "20h - 23h30",
+        "genre": "Tous genres",
+        "tarif": "Gratuit (Participation possible)",
+        "reservation": "Sur place"
+      },
+      "img": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=700&q=80"
+    },
+    "dj-samedi": {
+      "date": "Chaque samedi • 22h",
+      "title": "DJ Night – Boom Boom Saturdays",
+      "desc": "Les meilleurs hits remixés par nos DJ résident. Ambiance dansante garantie, éclairage disco d'enfer, cocktails frais et énergie positive jusqu'à l'aube.",
+      "details": {
+        "heure": "22h - 04h",
+        "genre": "House · Afro House · Electro",
+        "tarif": "2 500 FCFA (Gratuit avant 23h30)",
+        "reservation": "VIP tables disponibles"
+      },
+      "img": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=700&q=80"
+    },
+    "brunch-dimanche": {
+      "date": "Chaque dimanche • 10h",
+      "title": "Brunch Festif",
+      "desc": "Commencez votre dimanche en beauté avec nos petits déjeuners copieux, buffet local, jus frais et musique d'ambiance. Idéal en famille ou entre amis.",
+      "details": {
+        "heure": "10h - 14h",
+        "genre": "Musique lounge · Acoustique",
+        "tarif": "À la carte",
+        "reservation": "Pour groupes +6"
+      },
+      "img": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=700&q=80"
+    },
+    "ladies-night": {
+      "date": "1er mercredi de chaque mois • 19h",
+      "title": "Ladies Night",
+      "desc": "Soirée spéciale femmes avec réductions sur les cocktails, animations, et ambiance cool. Cocktails à moitié prix pour les mesdames jusqu'à 22h.",
+      "details": {
+        "heure": "19h - 00h",
+        "genre": "Musique variée · DJ live",
+        "tarif": "Gratuit pour les femmes",
+        "reservation": "Groupes bienvenues"
+      },
+      "img": "https://images.unsplash.com/photo-1549887534-f64a3b6f6e3e?w=700&q=80"
+    },
+    "match-foot": {
+      "date": "Jours de match • En direct",
+      "title": "Match Foot Live",
+      "desc": "Tous les grands matchs (Coupe du Monde, CAN, Champions League) retransmis en direct sur grand écran. Ambiance de stade, snacks & boissons, énergie de supporter.",
+      "details": {
+        "heure": "Selon matchs",
+        "genre": "Football en direct",
+        "tarif": "Gratuit",
+        "reservation": "Tables réservées sur demande"
+      },
+      "img": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=700&q=80"
+    }
+  }
+}
