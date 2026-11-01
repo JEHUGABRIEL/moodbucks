@@ -32,7 +32,7 @@ function openPlat(id) {
   const msg = encodeURIComponent(
     `Bonjour Moodbucks,\nJe voudrais commander : ${p.name} (${p.price})`
   );
-  document.getElementById('modalWA').href = `https://wa.me/23675000000?text=${msg}`;
+  document.getElementById('modalWA').href = `https://wa.me/23672999955?text=${msg}`;
 
   // Images
   curImgs = p.imgs;

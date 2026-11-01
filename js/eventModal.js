@@ -45,7 +45,7 @@ function openEvent(id) {
   const msg = encodeURIComponent(
     `Bonjour Moodbucks,\nJe voudrais réserver pour l'événement : ${event.title} (${event.date})`
   );
-  document.getElementById('eventModalWA').href = `https://wa.me/23675000000?text=${msg}`;
+  document.getElementById('eventModalWA').href = `https://wa.me/23672999955?text=${msg}`;
 
   // Afficher la modal
   document.getElementById('eventModalOverlay').classList.add('open');

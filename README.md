@@ -47,7 +47,8 @@ README.md
 - **Photos** : URLs Unsplash dans `index.html` et, pour le carrousel de la
   maison, dans `PHOTOS` de `js/ui.js`.
 - **Contact** : numéro WhatsApp et liens Maps présents dans `index.html`
-  (`wa.me/23675000000`, `tel:`, Google Maps).
+  (`wa.me/23672999955`, `tel:+23672999955`, `mailto:khalil.haidar18@gmail.com`,
+  Google Maps).
 
 ## Utilisation
 
